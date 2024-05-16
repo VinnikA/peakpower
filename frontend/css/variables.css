@@ -1,0 +1,10 @@
+:root {
+  --white: #FFFCF5;
+  --bg-body: #020E28;
+  --bg-gray: #161D2C;
+  --yellow: #FBBF24;
+  --gray: #9B9B9B;
+  --gradient-1: linear-gradient(#121212, #121212, #121212, #3E1FA7);
+  --gradient-2: linear-gradient(#3E1FA7, #668EAC);
+  --gradient-3: linear-gradient(to right, #3E1FA7, #A699D7);
+}

@@ -3,9 +3,207 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Peak Power</title>
 </head>
 <body>
-  
+  <!-- Header -->
+  <header class="header container">
+    <div class="header_logo">
+      <a href="#">
+        <img src="./assets/images/LOGO.png" alt="logo">
+      </a>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link_active">Shop</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Promotion</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Contacts</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Delivery</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__info info">
+      <div class="info__item">
+        <img src="./assets/icons/Heart_color_filled.svg" alt="favorites">
+        <div class="info__title">Favorites</div>
+      </div>
+      <div class="info__item">
+        <img src="./assets/icons/headset_white.svg" alt="favorites">
+        <div class="info__title">Help</div>
+      </div>
+      <div class="info__item">
+        <img src="./assets/icons/world_white.svg" alt="favorites">
+        <div class="info__title">EN</div>
+      </div>
+      <div class="info__item">
+        <img src="./assets/icons/cart_white.svg" alt="favorites">
+        <div class="info__badge">0</div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="main">
+    <!-- Promotion section -->
+    <div class="container">
+      <div class="promotion">
+        <a href="#" class="promotion__link">
+          <img src="./assets/icons/Prize_icon_color.svg" alt="icon">
+          <span class="promotion__description">
+            -10% on first order on the website
+          </span>
+        </a>
+        <a href="#" class="promotion__link">
+          <img src="./assets/icons/persent_icon_color.svg" alt="icon">
+          <span class="promotion__description">
+            Buy 1 get 1 -50% SALE
+          </span>
+        </a>
+        <a href="#" class="promotion__link">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="icon">
+          <span class="promotion__description">
+            Free Express Shipping over $99!
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- Search section -->
+    <div class="search">
+      <div class="container">
+        <div class="search__wrapper">
+          <div class="search__categories">
+            <div class="search__category">
+              <div class="search__title">
+                Sport nutrition
+                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
+              </div>
+              <ul class="search__list">
+                <li class="search__item search__item_main">Proteins</li>
+                <li class="search__item">Proteins isolates</li>
+                <li class="search__item">Proteins concentrates</li>
+                <li class="search__item">Blend protein mixes</li>
+                <li class="search__item">Proteins bars</li>
+                
+                <li class="search__item search__item_main">Fat burners</li>
+                <li class="search__item">Thermogenic suppele</li>
+                <li class="search__item">Herbal and extract-based fat burners</li>
+                <li class="search__item">Metabolism-boosting complexes</li>
+                <li class="search__item">Fat burners for women</li>
+                
+                <li class="search__item search__item_main">Gainers</li>
+                <li class="search__item">High-carb gainer complex</li>
+                <li class="search__item">Protein gainers</li>
+                <li class="search__item">Gainers with creatine</li>
+                <li class="search__item">Mass gainers</li>
+                
+                <li class="search__item search__item_main">BCAA</li>
+                <li class="search__item">Pure BCAA powder</li>
+                <li class="search__item">BCAA in capsules</li>
+                <li class="search__item">BCAA complexes with addidives</li>
+                <li class="search__item">BCAA blends for women</li>
+              </ul>
+            </div>
+            <div class="search__category">
+              <div class="search__title">
+                Sporting goods
+                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
+              </div> 
+              <ul class="search__list">
+                <li class="search__item search__item_main">Cardio workouts</li>
+                <li class="search__item">Treadmills</li>
+                <li class="search__item">Exercise bikes</li>
+                <li class="search__item">Elliptical trainers</li>
+                <li class="search__item">Rowing machines</li>
+                
+                <li class="search__item search__item_main">Sport accesories</li>
+                <li class="search__item">Belts and wristbands</li>
+                <li class="search__item">Straps and wraps for locks</li>
+                <li class="search__item">Sport gloves</li>
+                <li class="search__item">Fitness mats</li>
+                
+                <li class="search__item search__item_main">Dumbbells and barbells</li>
+                <li class="search__item">Dumbbells of various weights</li>
+                <li class="search__item">Barbells and bars</li>
+                <li class="search__item">Dumbbells and barbell sets</li>
+                <li class="search__item">Accesories for dumbbells and barbells</li>
+                
+                <li class="search__item search__item_main">Fitnes equipment</li>
+                <li class="search__item">Strength training machines</li>
+                <li class="search__item">Resistance bands and loops</li>
+                <li class="search__item">Push-up bars and pull-up bars</li>
+                <li class="search__item">Cable systems and pulleys</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search__field">
+            <form action="#" class="search__form" name="search">
+              <input type="text" class="search__input" placeholder="Search field">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero section -->
+    <div class="hero">
+      <div class="container">
+        <div class="hero__promo">
+          <p class="promo">
+            <span class="promo_yellow">Buy 1</span> whey gold standart <br />
+            <span class="promo_yellow">Get 1</span> - 50 % OFF
+          </p>
+          <button class="cta-btn">
+            Get it!
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Timer section -->
+    <div class="container">
+      <div class="timer">
+        <p class="timer__cta">
+          High whey BOGO 50% OFF Ends In:
+        </p>
+        <div class="timer__countdown"></div>
+        <div class="timer__btn-wrapper">
+          <button class="cta-btn">See all</button>
+        </div>
+      </div>
+    </div>
+    <!-- Choose section -->
+    <div class="container">
+      <div class="choose">
+        <div class="choose__text">
+          <h2 class="choose__title">
+            Choose for yourself <br/> sports nutrition <br/> in two steps!
+          </h2>
+          <p class="choose__description">
+            If you are not sure what sports nutrition best suits you, choose your gender and purpose training for further recommendations.
+          </p>
+        </div>
+        <div class="choose__photo choose__photo_men">
+          <div class="choose__btn-wrapper">
+            <button class="glass-btn">Men</button>
+          </div>
+        </div>
+        <div class="choose__photo choose__photo_women">
+          <div class="choose__btn-wrapper">
+            <button class="glass-btn">Women</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>
