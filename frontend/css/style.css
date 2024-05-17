@@ -69,6 +69,31 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
+.up-btn {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-image: url('../assets/icons/UP_white.svg');
+  background-position: center;
+  background-size: cover;
+}
+.next-btn {
+  width: 56px;
+  height: 68px;
+  background: none;
+  border: none;
+  outline: none;
+  background-position: center;
+  background-size: contain;
+}
+.next-btn_left {
+  background-image: url(../assets/icons/BTN_NEXT_LEFT_white.svg);
+}
+.next-btn_right {
+  background-image: url(../assets/icons/BTN_NEXT_RIGHT_white.svg);
+}
+
 /* header */
 .header {
   height: 88px;
@@ -387,10 +412,12 @@ body {
 }
 .form__body {
   margin: 0 auto;
+  padding: 0 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 24px;
   width: 608px;
 }
 .form__title {
@@ -414,4 +441,91 @@ body {
 }
 .form__btn-wrapper {
   margin: 16px 0 0 0;
+}
+
+/* Special offer section */
+.special-offer {
+  width: 100%;
+  height: 440px;
+  margin: 0 0 32px 0;
+  background-image: url('../assets/images/special-offer.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.special-offer__sticker {
+  position: relative;
+  width: 438px;
+  height: 275px;
+  background-image: var(--gradient-4);
+  border: 2px solid var(--white);
+}
+.special-offer__title {
+  margin: 80px 0 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.special-offer__btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Footer */
+.footer {
+  padding: 28px 0;
+}
+.footer__top, .footer__bottom {
+  display: flex;
+}
+.footer__top {
+  padding: 0 0 48px 0;
+}
+.footer__menu {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 0 50px 0 0;
+  padding: 0 32px;
+}
+.menu__link {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+.footer__title {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+.footer__payment {
+  flex-grow: 2;
+  margin: 0 20px 0 0;
+}
+.footer__social-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Slider section */
+.slider {
+  padding: 20px 0 0 0;
+  margin: 0 0 48px 0;
+}
+.slider__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.slider__box, .slider__body {
+  display: flex;
+  justify-content: space-between;
 }
