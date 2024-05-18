@@ -8,6 +8,25 @@
   <title>Peak Power</title>
 </head>
 <body>
+  <!-- Templates -->
+  <template class="big-card-template">
+    <div class="big-card">
+      <div class="big-card__img">
+        <img src="./assets/images/dumbbells-black.png" alt="proguct-image">
+      </div>
+      <div class="big-card__info">
+        <div class="big-card__info-box">
+          <h2 class="big-card__title">Big Card Title</h2>
+          <p class="big-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio officia minima modi eum debitis quos dolor nam, dolorem ullam fugiat.</p>
+        </div>
+        <div class="big-card__info-box">
+          <p class="big-card__new-price">$199.99</p>
+          <p class="big-card__old-price">$230.99</p>
+        </div>
+      </div>
+      <button class="arrow-right-btn">Add to card</button>
+    </div>
+  </template>
   <!-- Header -->
   <header class="header container">
     <div class="header_logo">
@@ -234,7 +253,7 @@
         <h2 class="slider__title">Top sellers</h2>
         <div class="slider__box">
           <button class="next-btn next-btn_left"></button>
-          <div class="slider__body"></div>
+          <div class="slider__body" id="top-sellers"></div>
           <button class="next-btn next-btn_right"></button>
         </div>
       </div>
@@ -245,7 +264,7 @@
         <h2 class="slider__title">Week sale</h2>
         <div class="slider__box">
           <button class="next-btn next-btn_left"></button>
-          <div class="slider__body"></div>
+          <div class="slider__body" id="week-sale"></div>
           <button class="next-btn next-btn_right"></button>
         </div>
       </div>
