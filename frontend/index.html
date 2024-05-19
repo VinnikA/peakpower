@@ -25,6 +25,46 @@
         </div>
       </div>
       <button class="arrow-right-btn">Add to card</button>
+      <div class="big-badge-box big-badge-box_left">
+        <div class="big-badge big-badge_left">
+          <img src="./assets/icons/persent_icon_color.svg" alt="-50%" class="big-badge__img">
+          <p class="big-badge__text">Buy 1 get 1 -50%</p>
+        </div>
+        <div class="big-badge big-badge_left">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="free-shippinng" class="big-badge__img">
+          <p class="big-badge__text">Free Shipping</p>
+        </div>
+      </div>
+      <div class="big-badge-box big-badge-box_right">
+        <div class="big-badge big-badge_right">
+          <p class="big-badge__text">-10% on first order</p>
+          <img src="./assets/icons/Prize_icon_color.svg" alt="-10%" class="big-badge__img">
+        </div>
+      </div>
+    </div>
+  </template>
+  <template class="small-card-template">
+    <div class="small-card">
+      <div class="small-card__img-box">
+        <img src="./assets/images/protein-jar-1.png" alt="suplement" class="small-card__img">
+      </div>
+      <h2 class="small-card__title">Small Card Title</h2>
+      <div class="small-card__price-box">
+        <p class="small-card__new-price">$133.99</p>
+        <p class="small-card__old-price">$153.99</p>
+      </div>
+      <button class="arrow-right-btn">Add to cart</button>
+      <div class="small-badge-box">
+        <div class="small-badge">
+          <img src="./assets/icons/persent_icon_color.svg" alt="-50%">
+        </div>
+        <div class="small-badge">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="free-shippinng">
+        </div>
+        <div class="small-badge">
+          <img src="./assets/icons/Prize_icon_color.svg" alt="-10%">
+        </div>
+      </div>
     </div>
   </template>
   <!-- Header -->
@@ -68,7 +108,7 @@
       </div>
       <div class="info__item">
         <img src="./assets/icons/cart_white.svg" alt="favorites">
-        <div class="info__badge">0</div>
+        <div class="info__big-badge">0</div>
       </div>
     </div>
   </header>
@@ -275,7 +315,7 @@
         <h2 class="slider__title">New</h2>
         <div class="slider__box">
           <button class="next-btn next-btn_left"></button>
-          <div class="slider__body"></div>
+          <div class="slider__body" id="new-goods"></div>
           <button class="next-btn next-btn_right"></button>
         </div>
       </div>
