@@ -46,6 +46,12 @@ body {
   position: absolute;
   right: 20%;
 }
+.cta-btn_wide::before {
+  left: 10%;
+}
+.cta-btn_wide::after {
+  right: 10%;
+}
 /* glass-button */
 .glass-btn {
   width: 140px;
@@ -824,4 +830,36 @@ body {
   list-style-type: disc;
   padding: 0 0 0 16px;
   margin: 0 0 0 16px;
+}
+/* contacts page */
+.contacts {
+  position: relative;
+  margin: 24px 0 40px 0;
+  height: 744px;
+  background-image: url('../assets/images/just_a_man.png'), url('../assets/images/BG_Man_IMG_SVG.svg'), linear-gradient(to right, #020E28 50%, #121212 50%);
+  background-repeat: no-repeat;
+  background-position: 76% 14px, center, center;
+}
+.contacts__info {
+  position: absolute;
+  top: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.contacts__text {
+  font-size: 32px;
+}
+.contacts__ul {
+  list-style-type: disc;
+  padding: 0 0 0 16px;
+  font-size: 20px;
+}
+.promo {
+  width: 740px;
+  font-family: 'Drunk Wide';
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
 }
