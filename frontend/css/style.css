@@ -863,3 +863,25 @@ body {
   font-style: italic;
   text-align: center;
 }
+
+/* not found page */
+.not-found {
+  width: 100%;
+  margin: 94px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.not-found__img {
+  width: 645px;
+  height: 483px;
+  background-image: url('../assets/images/not-found.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.not-found__info {
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
