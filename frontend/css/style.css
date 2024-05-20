@@ -643,6 +643,73 @@ body {
   margin: 0 0 8px 0;
 }
 
+/* promotion page */
+.promo-block {
+  margin: 0 0 40px 0;
+}
+.promo-block_top {
+  margin: 30px 0 40px 0;
+}
+.promo-block__topper {
+  padding: 20px 0;
+  background-image: var(--gradient-2);
+}
+.promo-block__title {
+  display: flex;
+  align-items: center;
+}
+.promo-block__icon {
+  margin: 0 8px 0 0;
+}
+.promo-block__message {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.promo-block__content {
+  min-height: 600px;
+  background-repeat: no-repeat;
+  padding: 64px 0;
+  font-size: 20px;
+}
+.promo-block__content_top {
+  background-image: url('../assets/images/promo-1-2.png'), url('../assets/images/promo-1-1.png');
+  background-position: right bottom, center;
+  background-size: auto, cover;
+}
+.promo-block__content_middle {
+  background-image: url('../assets/images/promo-2.png');
+  background-position: center;
+  background-size: cover;
+}
+.promo-block__content_bottom {
+  background-image: url('../assets/images/promo-3.png');
+  background-position: center;
+  background-size: cover;
+}
+.promo-block__paragraph {
+  max-width: 945px;
+}
+.promo-block__ol {
+  list-style-type: decimal;
+  margin: 0 0 0 16px;
+  padding: 0 0 0 16px;
+}
+.promo-block__ul {
+  list-style-type: disc;
+  margin: 0 0 0 16px;
+  padding: 0 0 0 16px;
+}
+.promo-block__label {
+  font-family: 'Drunk Wide';
+  font-size: 64px;
+  font-style: italic;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  right: 0;
+}
 /* about page */
 .delivery {
   width: 100%;
