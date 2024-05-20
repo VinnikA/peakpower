@@ -371,10 +371,10 @@ body {
   justify-content: center;
 }
 .signboard__store_nutrition {
-  background-image: url('../assets/images/nutrition-store.jpg');
+  background-image: url('../assets/images/nutrition-store.png');
 }
 .signboard__store_goods {
-  background-image: url('../assets/images/sport-goods-store.jpg');
+  background-image: url('../assets/images/sport-goods-store.png');
 }
 .signboard__sticker {
   position: relative;
@@ -448,7 +448,7 @@ body {
   width: 100%;
   height: 440px;
   margin: 0 0 32px 0;
-  background-image: url('../assets/images/special-offer.jpg');
+  background-image: url('../assets/images/special-offer.png');
   background-position: center;
   background-size: cover;
   display: flex;
@@ -641,4 +641,29 @@ body {
   height: 40px;
   background-image: var(--gradient-3);
   margin: 0 0 8px 0;
+}
+
+/* about page */
+.delivery {
+  width: 100%;
+  height: 860px;
+  margin: 30px 0 50px 0;
+  padding: 56px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/images/delivery.png);
+}
+.delivery__title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 32px 0;
+}
+.delivery__list, .delivery__text {
+  font-size: 20px;
+  max-width: 750px;
+}
+.delivery__list {
+  list-style-type: decimal;
+  padding: 0 0 0 16px;
 }
