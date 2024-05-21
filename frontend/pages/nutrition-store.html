@@ -3,66 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Peak Power</title>
 </head>
 <body>
   <!-- Templates -->
-  <template class="big-card-template">
-    <div class="big-card">
-      <div class="big-card__img">
-        <img src="./assets/images/dumbbells-black.png" alt="proguct-image">
-      </div>
-      <div class="big-card__info">
-        <div class="big-card__info-box">
-          <h2 class="big-card__title">Big Card Title</h2>
-          <p class="big-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio officia minima modi eum debitis quos dolor nam, dolorem ullam fugiat.</p>
-        </div>
-        <div class="big-card__info-box">
-          <p class="big-card__new-price">$199.99</p>
-          <p class="big-card__old-price">$230.99</p>
-        </div>
-      </div>
-      <button class="arrow-right-btn">Add to card</button>
-      <div class="big-badge-box big-badge-box_left">
-        <div class="big-badge big-badge_left">
-          <img src="./assets/icons/persent_icon_color.svg" alt="-50%" class="big-badge__img">
-          <p class="big-badge__text">Buy 1 get 1 -50%</p>
-        </div>
-        <div class="big-badge big-badge_left">
-          <img src="./assets/icons/Delivery_icon_color.svg" alt="free-shippinng" class="big-badge__img">
-          <p class="big-badge__text">Free Shipping</p>
-        </div>
-      </div>
-      <div class="big-badge-box big-badge-box_right">
-        <div class="big-badge big-badge_right">
-          <p class="big-badge__text">-10% on first order</p>
-          <img src="./assets/icons/Prize_icon_color.svg" alt="-10%" class="big-badge__img">
-        </div>
-      </div>
-    </div>
-  </template>
   <template class="small-card-template">
     <div class="small-card">
       <div class="small-card__img-box">
-        <img src="./assets/images/supplement-1.png" alt="suplement" class="small-card__img">
+        <img src="#" alt="none" class="small-card__img">
       </div>
-      <h2 class="small-card__title">Small Card Title</h2>
+      <h2 class="small-card__title"></h2>
       <div class="small-card__price-box">
-        <p class="small-card__new-price">$133.99</p>
-        <p class="small-card__old-price">$153.99</p>
+        <p class="small-card__new-price"></p>
+        <p class="small-card__old-price"></p>
       </div>
       <button class="arrow-right-btn">Add to cart</button>
       <div class="small-badge-box">
-        <div class="small-badge">
-          <img src="./assets/icons/persent_icon_color.svg" alt="-50%">
+        <div class="small-badge" id="discount-on-the-second-item">
+          <img src="../assets/icons/persent_icon_color.svg" alt="discount on the second item">
         </div>
-        <div class="small-badge">
-          <img src="./assets/icons/Delivery_icon_color.svg" alt="free-shippinng">
+        <div class="small-badge" id="free-shipping">
+          <img src="../assets/icons/Delivery_icon_color.svg" alt="free shipping">
         </div>
-        <div class="small-badge">
-          <img src="./assets/icons/Prize_icon_color.svg" alt="-10%">
+        <div class="small-badge" id="discount-on-first-order">
+          <img src="../assets/icons/Prize_icon_color.svg" alt="discount on first order">
         </div>
       </div>
     </div>
@@ -71,43 +37,43 @@
   <header class="header container">
     <div class="header_logo">
       <a href="#">
-        <img src="./assets/images/LOGO.png" alt="logo">
+        <img src="../assets/images/LOGO.png" alt="logo">
       </a>
     </div>
     <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="./pages/about.html" class="nav__link">About</a>
+          <a href="./about.html" class="nav__link">About</a>
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link nav__link_active">Shop</a>
+          <a href="../index.html" class="nav__link nav__link_active">Shop</a>
         </li>
         <li class="nav__item">
-          <a href="./pages/promotion.html" class="nav__link">Promotion</a>
+          <a href="./promotion.html" class="nav__link">Promotion</a>
         </li>
         <li class="nav__item">
-          <a href="./pages/contacts.html" class="nav__link">Contacts</a>
+          <a href="./contacts.html" class="nav__link">Contacts</a>
         </li>
         <li class="nav__item">
-          <a href="./pages/delivery.html" class="nav__link">Delivery</a>
+          <a href="#" class="nav__link">Delivery</a>
         </li>
       </ul>
     </nav>
     <div class="header__info info">
       <div class="info__item">
-        <img src="./assets/icons/Heart_color_filled.svg" alt="favorites">
+        <img src="../assets/icons/Heart_color_filled.svg" alt="favorites">
         <div class="info__title">Favorites</div>
       </div>
       <div class="info__item">
-        <img src="./assets/icons/headset_white.svg" alt="favorites">
+        <img src="../assets/icons/headset_white.svg" alt="favorites">
         <div class="info__title">Help</div>
       </div>
       <div class="info__item">
-        <img src="./assets/icons/world_white.svg" alt="favorites">
+        <img src="../assets/icons/world_white.svg" alt="favorites">
         <div class="info__title">EN</div>
       </div>
       <div class="info__item">
-        <img src="./assets/icons/cart_white.svg" alt="favorites">
+        <img src="../assets/icons/cart_white.svg" alt="favorites">
         <div class="info__big-badge">0</div>
       </div>
     </div>
@@ -117,20 +83,20 @@
     <!-- Promotion section -->
     <div class="container">
       <div class="promotion">
-        <a href="./pages/promotion.html" class="promotion__link">
-          <img src="./assets/icons/Prize_icon_color.svg" alt="icon">
+        <a href="./promotion.html" class="promotion__link">
+          <img src="../assets/icons/Prize_icon_color.svg" alt="icon">
           <span class="promotion__description">
             -10% on first order on the website
           </span>
         </a>
-        <a href="./pages/promotion.html" class="promotion__link">
-          <img src="./assets/icons/persent_icon_color.svg" alt="icon">
+        <a href="./promotion.html" class="promotion__link">
+          <img src="../assets/icons/persent_icon_color.svg" alt="icon">
           <span class="promotion__description">
             Buy 1 get 1 -50% SALE
           </span>
         </a>
-        <a href="./pages/promotion.html" class="promotion__link">
-          <img src="./assets/icons/Delivery_icon_color.svg" alt="icon">
+        <a href="./promotion.html" class="promotion__link">
+          <img src="../assets/icons/Delivery_icon_color.svg" alt="icon">
           <span class="promotion__description">
             Free Express Shipping over $99!
           </span>
@@ -145,7 +111,7 @@
             <div class="search__category">
               <div class="search__title">
                 Sport nutrition
-                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
+                <img src="../assets/icons/down-white.svg" alt="down" class="search__arrow">
               </div>
               <ul class="search__list">
                 <li class="search__item search__item_main">Proteins</li>
@@ -176,7 +142,7 @@
             <div class="search__category">
               <div class="search__title">
                 Sporting goods
-                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
+                <img src="../assets/icons/down-white.svg" alt="down" class="search__arrow">
               </div> 
               <ul class="search__list">
                 <li class="search__item search__item_main">Cardio workouts</li>
@@ -213,35 +179,9 @@
         </div>
       </div>
     </div>
-    <!-- Hero section -->
-    <div class="hero">
-      <div class="container">
-        <div class="hero__promo">
-          <p class="promo">
-            <span class="promo_yellow">Buy 1</span> whey gold standart <br />
-            <span class="promo_yellow">Get 1</span> - 50 % OFF
-          </p>
-          <button class="cta-btn">
-            Get it!
-          </button>
-        </div>
-      </div>
-    </div>
-    <!-- Timer section -->
-    <div class="container">
-      <div class="timer">
-        <p class="timer__cta">
-          High whey BOGO 50% OFF Ends In:
-        </p>
-        <div class="timer__countdown"></div>
-        <div class="timer__btn-wrapper">
-          <button class="cta-btn">See all</button>
-        </div>
-      </div>
-    </div>
     <!-- Choose section -->
     <div class="container">
-      <div class="choose">
+      <div class="choose choose_gradient">
         <div class="choose__text">
           <h2 class="choose__title">
             Choose for yourself <br/> sports nutrition <br/> in two steps!
@@ -262,98 +202,68 @@
         </div>
       </div>
     </div>
-    <!-- Signboard section -->
+    <!-- Nutrition store -->
     <div class="container">
-      <div class="signboard">
-        <div class="signboard__store signboard__store_nutrition">
-          <div class="signboard__sticker">
-            <h2 class="signboard__title">Nutrition store</h2>
-            <div class="signboard__btn-wrapper">
-              <a class="arrow-right-btn" href="./pages/nutrition-store.html">
-                Shop now
-              </a>
-            </div>
-          </div>
+      <!-- Products section Proteins-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">Proteins</h2>
+          <p class="products__subcategory">Protein isolates</p>
+          <p class="products__subcategory">Protein concentrates</p>
+          <p class="products__subcategory">Blend protein mixes</p>
+          <p class="products__subcategory">Protein bars</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
         </div>
-        <div class="signboard__store signboard__store_goods">
-          <div class="signboard__sticker">
-            <h2 class="signboard__title">Sporting goods store</h2>
-            <div class="signboard__btn-wrapper">
-              <button class="arrow-right-btn">
-                Shop now
-              </button>
-            </div>
-          </div>
+        <div class="products__cards" id="proteins"></div>
+      </div>
+      <div class="devider"></div>
+      <!-- Products section Fat Burners -->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">Fat Burners</h2>
+          <p class="products__subcategory">Protein isolates</p>
+          <p class="products__subcategory">Protein concentrates</p>
+          <p class="products__subcategory">Blend protein mixes</p>
+          <p class="products__subcategory">Protein bars</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
         </div>
+        <div class="products__cards" id="BCAA"></div>
       </div>
-    </div>
-    <!-- TopSellers section -->
-    <div class="container">
-      <div class="slider">
-        <h2 class="slider__title">Top sellers</h2>
-        <div class="slider__box">
-          <button class="next-btn next-btn_left"></button>
-          <div class="slider__body" id="top-sellers"></div>
-          <button class="next-btn next-btn_right"></button>
+      <div class="devider"></div>
+      <!-- Products section BCAA-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">BCAA</h2>
+          <p class="products__subcategory">Pure BCAA powders</p>
+          <p class="products__subcategory">BCAA in capsules</p>
+          <p class="products__subcategory">BCAA complexes with additives</p>
+          <p class="products__subcategory">BCAA blends for recovery</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
         </div>
+        <div class="products__cards" id="fat burners"></div>
       </div>
-    </div>
-    <!-- WeekSale section -->
-    <div class="container">
-      <div class="slider">
-        <h2 class="slider__title">Week sale</h2>
-        <div class="slider__box">
-          <button class="next-btn next-btn_left"></button>
-          <div class="slider__body" id="week-sale"></div>
-          <button class="next-btn next-btn_right"></button>
+      <div class="devider"></div>
+      <!-- Products section Proteins-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">Proteins</h2>
+          <p class="products__subcategory">Protein isolates</p>
+          <p class="products__subcategory">Protein concentrates</p>
+          <p class="products__subcategory">Blend protein mixes</p>
+          <p class="products__subcategory">Protein bars</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
         </div>
+        <div class="products__cards" id="gainers"></div>
       </div>
-    </div>
-    <!-- TheNewShit section -->
-    <div class="container">
-      <div class="slider">
-        <h2 class="slider__title">New</h2>
-        <div class="slider__box">
-          <button class="next-btn next-btn_left"></button>
-          <div class="slider__body" id="new-goods"></div>
-          <button class="next-btn next-btn_right"></button>
-        </div>
-      </div>
-    </div>
-    <!-- Form section-->
-    <div class="container">
-      <div class="form">
-        <form action="#" class="form__body">
-          <h2 class="form__title">Get in touch</h2>
-          <label for="userName" class="form__label">Name</label>
-          <input type="text" id="userName" class="form__input">
-          <label for="email" class="form__label">Email</label>
-          <input type="email" id="email" class="form__input">
-          <label for="message" class="form__label">Message</label>
-          <input type="text" id="message" class="form__input">
-          <div class="form__btn-wrapper">
-            <button type="submit" class="arrow-right-btn">Send</button>
-          </div>
-        </form>
-      </div>
-    </div>
-    <!-- SpecialOffer section -->
-    <div class="special-offer">
-      <div class="special-offer__sticker">
-        <h2 class="special-offer__title">
-          HOT January <br/> 
-          Buy 1 get 1 -50% SALE  </h2>
-        <div class="special-offer__btn-wrapper">
-          <button class="arrow-right-btn">Let's shopping</button>
-        </div>
-      </div>
+      <div class="devider"></div>
+    <!-- End of the nutrition store -->
     </div>
     <!-- Footer -->
     <div class="container">
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__logo">
-            <img src="./assets/images/LOGO.png" alt="logo">
+            <img src="../assets/images/LOGO.png" alt="logo">
           </div>
           <div class="footer__menu menu">
             <div class="menu__block">
@@ -400,26 +310,26 @@
           <div class="footer__payment">
             <h2 class="footer__title">Pay securely with</h2>
             <div class="footer__img">
-              <img src="./assets/images/payment.png" alt="payment">
+              <img src="../assets/images/payment.png" alt="payment">
             </div>
           </div>
           <div class="footer__social">
             <h2 class="footer__title">Social networks</h2>
             <div class="footer__social-icons">
               <a href="#" class="footer__link">
-                <img src="./assets/icons/instagram.svg" alt="instagram" class="footer__icon">
+                <img src="../assets/icons/instagram.svg" alt="instagram" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="./assets/icons/skype.svg" alt="skype" class="footer__icon">
+                <img src="../assets/icons/skype.svg" alt="skype" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__icon">
+                <img src="../assets/icons/youtube.svg" alt="youtube" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="./assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
+                <img src="../assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="./assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
+                <img src="../assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
               </a>
             </div>
           </div>
@@ -427,6 +337,6 @@
       </footer>
     </div>
   </main>
-  <script type="module" src="./js/index.js"></script>
+  <script type="module" src="../js/index.js"></script>
 </body>
 </html>
