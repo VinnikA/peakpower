@@ -11,8 +11,8 @@
   <!-- Templates -->
   <template class="big-card-template">
     <div class="big-card">
-      <div class="big-card__img">
-        <img src="./assets/images/dumbbells-black.png" alt="proguct-image">
+      <div class="big-card__img-box">
+        <img src="#" alt="proguct-image" class="big-card__img">
       </div>
       <div class="big-card__info">
         <div class="big-card__info-box">
@@ -20,23 +20,23 @@
           <p class="big-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio officia minima modi eum debitis quos dolor nam, dolorem ullam fugiat.</p>
         </div>
         <div class="big-card__info-box">
-          <p class="big-card__new-price">$199.99</p>
-          <p class="big-card__old-price">$230.99</p>
+          <p class="big-card__new-price"></p>
+          <p class="big-card__old-price"></p>
         </div>
       </div>
       <button class="arrow-right-btn">Add to card</button>
       <div class="big-badge-box big-badge-box_left">
-        <div class="big-badge big-badge_left">
+        <div class="big-badge big-badge_left" id="discount-on-the-second-item-big">
           <img src="./assets/icons/persent_icon_color.svg" alt="-50%" class="big-badge__img">
           <p class="big-badge__text">Buy 1 get 1 -50%</p>
         </div>
-        <div class="big-badge big-badge_left">
+        <div class="big-badge big-badge_left" id="free-shipping-big">
           <img src="./assets/icons/Delivery_icon_color.svg" alt="free-shippinng" class="big-badge__img">
           <p class="big-badge__text">Free Shipping</p>
         </div>
       </div>
       <div class="big-badge-box big-badge-box_right">
-        <div class="big-badge big-badge_right">
+        <div class="big-badge big-badge_right" id="discount-on-first-order-big">
           <p class="big-badge__text">-10% on first order</p>
           <img src="./assets/icons/Prize_icon_color.svg" alt="-10%" class="big-badge__img">
         </div>
@@ -46,23 +46,23 @@
   <template class="small-card-template">
     <div class="small-card">
       <div class="small-card__img-box">
-        <img src="./assets/images/supplement-1.png" alt="suplement" class="small-card__img">
+        <img src="#" alt="none" class="small-card__img">
       </div>
-      <h2 class="small-card__title">Small Card Title</h2>
+      <h2 class="small-card__title"></h2>
       <div class="small-card__price-box">
-        <p class="small-card__new-price">$133.99</p>
-        <p class="small-card__old-price">$153.99</p>
+        <p class="small-card__new-price"></p>
+        <p class="small-card__old-price"></p>
       </div>
       <button class="arrow-right-btn">Add to cart</button>
       <div class="small-badge-box">
-        <div class="small-badge">
-          <img src="./assets/icons/persent_icon_color.svg" alt="-50%">
+        <div class="small-badge" id="discount-on-the-second-item">
+          <img src="./assets/icons/persent_icon_color.svg" alt="discount on the second item">
         </div>
-        <div class="small-badge">
-          <img src="./assets/icons/Delivery_icon_color.svg" alt="free-shippinng">
+        <div class="small-badge" id="free-shipping">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="free shipping">
         </div>
-        <div class="small-badge">
-          <img src="./assets/icons/Prize_icon_color.svg" alt="-10%">
+        <div class="small-badge" id="discount-on-first-order">
+          <img src="./assets/icons/Prize_icon_color.svg" alt="discount on first order">
         </div>
       </div>
     </div>
@@ -279,9 +279,9 @@
           <div class="signboard__sticker">
             <h2 class="signboard__title">Sporting goods store</h2>
             <div class="signboard__btn-wrapper">
-              <button class="arrow-right-btn">
+              <a class="arrow-right-btn" href="./pages/sporting-goods-store.html">
                 Shop now
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -291,9 +291,9 @@
     <div class="container">
       <div class="slider">
         <h2 class="slider__title">Top sellers</h2>
-        <div class="slider__box">
+        <div class="slider__box" id="top-sellers">
           <button class="next-btn next-btn_left"></button>
-          <div class="slider__body" id="top-sellers"></div>
+          <div class="slider__body"></div>
           <button class="next-btn next-btn_right"></button>
         </div>
       </div>
@@ -302,9 +302,9 @@
     <div class="container">
       <div class="slider">
         <h2 class="slider__title">Week sale</h2>
-        <div class="slider__box">
+        <div class="slider__box" id="week-sale">
           <button class="next-btn next-btn_left"></button>
-          <div class="slider__body" id="week-sale"></div>
+          <div class="slider__body"></div>
           <button class="next-btn next-btn_right"></button>
         </div>
       </div>
@@ -313,9 +313,9 @@
     <div class="container">
       <div class="slider">
         <h2 class="slider__title">New</h2>
-        <div class="slider__box">
+        <div class="slider__box" id="new-goods">
           <button class="next-btn next-btn_left"></button>
-          <div class="slider__body" id="new-goods"></div>
+          <div class="slider__body" ></div>
           <button class="next-btn next-btn_right"></button>
         </div>
       </div>

@@ -1,6 +1,6 @@
 @import "./variables.css";
 @import "./fonts.css";
-
+@import "./animation.css";
 
 /* common styles */
 body {
@@ -97,6 +97,7 @@ body {
 }
 .next-btn {
   width: 56px;
+  min-width: 56px;
   height: 68px;
   background: none;
   border: none;
@@ -567,6 +568,8 @@ body {
   justify-content: space-between;
   gap: 24px;
   padding: 16px 24px 8px 24px;
+  opacity: 0.3;
+  animation: fadeIn .7s forwards;
 }
 .big-card__info {
   display: flex;
@@ -627,7 +630,17 @@ body {
   justify-content: space-between;
   align-items: center;
   padding:  16px 8px 8px 8px;
+  opacity: 0.3;
+  animation: fadeIn .7s forwards;
 }
+.small-card__img-box, 
+.small-card__title,
+.small-card__new-price,
+.small-card__old-price {
+  opacity: 0.3;
+  animation: fadeIn 1.5s forwards;
+}
+
 .small-card__img-box {
   width: 180px;
   height: 180px;
@@ -904,8 +917,12 @@ body {
   gap: 24px;
   margin: 0 0 32px 0;
 }
+.products_top-section {
+  margin: 32px 0;
+}
 .products__info-block {
   min-width: 224px;
+  width: 224px;
 }
 .products__title {
   font-size: 24px;

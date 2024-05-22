@@ -30,7 +30,7 @@ export function storeRows() {
 
   containers.forEach(container => {
     
-    const items = data.filter(item => item.category === container.id)
+    const items = data.filter(item => item.category === container.id).slice(0, 4)
 
     items.forEach(item => renderItem(item, container))
 
