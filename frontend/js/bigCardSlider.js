@@ -21,6 +21,7 @@ export function bigCardSlider(targetID) {
 
     clone.querySelector('.big-card__img').src = data.productImg.slice(1) 
     clone.querySelector('.big-card__title').textContent = data.title 
+    clone.querySelector('.big-card__description').textContent = data.description 
     clone.querySelector('.big-card__new-price').textContent = `$${data.specialPrice}` 
     clone.querySelector('.big-card__old-price').textContent = data.regularPrice ? `$${data.regularPrice}` : ''
 

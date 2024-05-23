@@ -16,7 +16,7 @@
       </div>
       <div class="big-card__info">
         <div class="big-card__info-box">
-          <h2 class="big-card__title">Big Card Title</h2>
+          <h2 class="big-card__title"></h2>
           <p class="big-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio officia minima modi eum debitis quos dolor nam, dolorem ullam fugiat.</p>
         </div>
         <div class="big-card__info-box">
@@ -24,7 +24,7 @@
           <p class="big-card__old-price"></p>
         </div>
       </div>
-      <button class="arrow-right-btn">Add to card</button>
+      <button class="arrow-right-btn">Add to cart</button>
       <div class="big-badge-box big-badge-box_left">
         <div class="big-badge big-badge_left" id="discount-on-the-second-item-big">
           <img src="./assets/icons/persent_icon_color.svg" alt="-50%" class="big-badge__img">
@@ -348,8 +348,9 @@
         </div>
       </div>
     </div>
+  </main>
     <!-- Footer -->
-    <div class="container">
+  <div class="container">
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__logo">
@@ -425,8 +426,39 @@
           </div>
         </div>
       </footer>
+  </div>
+  <div class="overlay overlay_hidden">
+    <div class="cart">
+      <h2 class="cart__title">Cart</h2>
+      <div class="cart__step">
+        <h3 class="cart__subtitle">Step 1</h3>
+        <div class="cart__table">
+          <div class="cart__empty">There is nothing to see! Go shopping!</div>
+        </div>
+      </div>
+      <div class="cart__step">
+        <h3 class="cart__subtitle">Step 2</h3>
+        <input type="text" class="promo-code">
+      </div>
+      <div class="cart__step">
+        <h3 class="cart__subtitle">Step 3</h3>
+        <form action="#" class="popup-form" id="cart-form">
+          <label for="cart-name" class="popup-form__label">Name</label>
+          <input type="text" id="cart-name" class="popup-form__input">
+          <label for="cart-communication" class="popup-form__label">Telephone or email</label>
+          <input type="text" id="cart-communication" class="popup-form__input">
+          <label for="cart-message" class="popup-form__label">Message</label>
+          <input type="text" id="cart-message" class="popup-form__input">
+          <div class="popup-form__btn-box">
+            <button type="submit" class="cta-btn">Get it!</button>
+          </div>
+        </form>
+      </div>
+      <div class="cart__btn-box">
+        <button>Continue shopping</button>
+      </div>
     </div>
-  </main>
+  </div>
   <script type="module" src="./js/index.js"></script>
 </body>
 </html>

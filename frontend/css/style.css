@@ -937,3 +937,43 @@ body {
   gap: 24px;
   overflow: hidden;
 }
+
+/* pop-ups */
+/* overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #161D2CCC;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay_hidden {
+  display: none;
+}
+/* popup form */
+.popup-form {
+  display: flex;
+  flex-direction: column;
+}
+.popup-form__input {
+  width: 100%;
+}
+.popup-form__btn-box {
+  margin: 24px auto 0 auto;
+}
+/* cart */
+.cart {
+  width: 640px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-body);
+  padding: 16px;
+}
+.cart__step {
+  margin: 12px 0;
+}
