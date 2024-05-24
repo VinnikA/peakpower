@@ -106,7 +106,7 @@
         <img src="./assets/icons/world_white.svg" alt="favorites">
         <div class="info__title">EN</div>
       </div>
-      <div class="info__item">
+      <div class="info__item" id="open-cart">
         <img src="./assets/icons/cart_white.svg" alt="favorites">
         <div class="info__big-badge">0</div>
       </div>
@@ -427,9 +427,11 @@
         </div>
       </footer>
   </div>
-  <div class="overlay overlay_hidden">
-    <div class="cart">
-      <h2 class="cart__title">Cart</h2>
+  <!-- cart pop-up -->
+  <div class="overlay overlay_hidden" id="cart">
+    <div class="popup cart">
+      <button class="popup__close-btn"></button>
+      <h2 class="popup__title">Cart</h2>
       <div class="cart__step">
         <h3 class="cart__subtitle">Step 1</h3>
         <div class="cart__table">
@@ -438,7 +440,8 @@
       </div>
       <div class="cart__step">
         <h3 class="cart__subtitle">Step 2</h3>
-        <input type="text" class="promo-code">
+        <label for="promo-code" class="cart__label">Promo code <span>(if have)</span> </label>
+        <input type="text" class="cart__promo-code" id="promo-code" placeholder="8 - 16 symbols">
       </div>
       <div class="cart__step">
         <h3 class="cart__subtitle">Step 3</h3>
@@ -448,17 +451,22 @@
           <label for="cart-communication" class="popup-form__label">Telephone or email</label>
           <input type="text" id="cart-communication" class="popup-form__input">
           <label for="cart-message" class="popup-form__label">Message</label>
-          <input type="text" id="cart-message" class="popup-form__input">
-          <div class="popup-form__btn-box">
+          <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
+          <div class="popup__btn-box">
             <button type="submit" class="cta-btn">Get it!</button>
           </div>
         </form>
       </div>
-      <div class="cart__btn-box">
-        <button>Continue shopping</button>
+      <div class="popup__btn-box">
+        <button class="ghost-btn" id="continue-shopping">Continue shopping</button>
       </div>
     </div>
   </div>
+  <!-- thanks you popup -->
+  <div class="overlay overlay_hidden">
+    <div></div>
+  </div>
+  <!-- end -->
   <script type="module" src="./js/index.js"></script>
 </body>
 </html>

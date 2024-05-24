@@ -4,6 +4,7 @@ import { formHandelr } from "./form.js";
 import { storeRows } from "./storeRows.js";
 import { smallCardSlider } from "./smallCardSlider.js";
 import { bigCardSlider } from "./bigCardSlider.js";
+import { closePopup, openPopup } from "./popup.js";
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -30,4 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
     search()
     storeRows()
   }
+
+  closePopup()
+  openPopup()
+
 })

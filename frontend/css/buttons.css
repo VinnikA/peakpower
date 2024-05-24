@@ -1,0 +1,111 @@
+/* buttons */
+/* cta-button */
+.cta-btn {
+  position: relative;
+  width: 220px;
+  height: 62px;
+  background-color: var(--yellow);
+  color: var(--bg-body);
+  font-size: 22px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.cta-btn::before {
+  content: '>>';
+  position: absolute;
+  left: 20%;
+}
+.cta-btn::after {
+  content: '<<';
+  position: absolute;
+  right: 20%;
+}
+.cta-btn_wide::before {
+  left: 10%;
+}
+.cta-btn_wide::after {
+  right: 10%;
+}
+/* glass-button */
+.glass-btn {
+  width: 140px;
+  height: 32px;
+  border: 2px solid var(--white);
+  background: none;
+  color: var(--white);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+}
+.glass-btn_big {
+  height: 48px;
+}
+/* arrow-right-btn */
+.arrow-right-btn {
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  padding: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--white);
+}
+.arrow-right-btn::after {
+  content: url('../assets/icons/arrow-right-long.svg');
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* up button */
+.up-btn {
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-image: url('../assets/icons/UP_white.svg');
+  background-position: center;
+  background-size: cover;
+}
+/* next buttons left and right */
+.next-btn {
+  width: 56px;
+  min-width: 56px;
+  height: 68px;
+  background: none;
+  border: none;
+  outline: none;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.next-btn_left {
+  background-image: url(../assets/icons/BTN_NEXT_LEFT_white.svg);
+}
+.next-btn_right {
+  background-image: url(../assets/icons/BTN_NEXT_RIGHT_white.svg);
+}
+/* outlined and ghost button */
+.outlined-btn, .ghost-btn {
+  display: block;
+  background: none;
+  outline: none;
+  text-align: center;
+  width: 220px;
+  height: 62px;
+  color: var(--yellow);
+  cursor: pointer;
+}
+.outlined-btn {
+  border: 2px solid var(--yellow);
+  font-size: 24px;
+}
+/* ghost button */
+.ghost-btn {
+  border: none;
+  font-size: 20px;
+}
