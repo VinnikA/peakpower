@@ -17,9 +17,17 @@ export function closePopup() {
       overlay.classList.add('overlay_hidden')
     })
   })
+
+  window.addEventListener('click', e => {
+    overlays.forEach(item => {
+      if(item === e.target) {
+        item.classList.add('overlay_hidden')
+      }
+    })
+  })
 }
 
-export function openPopup() {
+export function openCart() {
 
   const opentCart = document.querySelector('#open-cart')
 

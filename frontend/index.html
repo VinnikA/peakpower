@@ -9,6 +9,7 @@
 </head>
 <body>
   <!-- Templates -->
+  <!-- Big card template -->
   <template class="big-card-template">
     <div class="big-card">
       <div class="big-card__img-box">
@@ -24,7 +25,7 @@
           <p class="big-card__old-price"></p>
         </div>
       </div>
-      <button class="arrow-right-btn">Add to cart</button>
+      <button class="arrow-right-btn add-to-cart">Add to cart</button>
       <div class="big-badge-box big-badge-box_left">
         <div class="big-badge big-badge_left" id="discount-on-the-second-item-big">
           <img src="./assets/icons/persent_icon_color.svg" alt="-50%" class="big-badge__img">
@@ -43,6 +44,7 @@
       </div>
     </div>
   </template>
+  <!-- Small card template -->
   <template class="small-card-template">
     <div class="small-card">
       <div class="small-card__img-box">
@@ -53,7 +55,9 @@
         <p class="small-card__new-price"></p>
         <p class="small-card__old-price"></p>
       </div>
-      <button class="arrow-right-btn">Add to cart</button>
+      <button class="arrow-right-btn add-to-cart" value="">
+        Add to cart
+      </button>
       <div class="small-badge-box">
         <div class="small-badge" id="discount-on-the-second-item">
           <img src="./assets/icons/persent_icon_color.svg" alt="discount on the second item">
@@ -65,6 +69,21 @@
           <img src="./assets/icons/Prize_icon_color.svg" alt="discount on first order">
         </div>
       </div>
+    </div>
+  </template>
+  <!-- Cart table item template -->
+  <template class="cart-table-item-template">
+    <div class="cart__item item">
+      <div class="item__name"></div>
+      <div class="item__quantity-box">
+        <button class="item__btn" id="decrease">-</button>
+        <div class="item__quantity"></div>
+        <button class="item__btn" id="increase">+</button>
+      </div>
+      <div class="item__price"></div>
+      <button class="item__delete-btn">
+        <img src="./assets/icons/trash_white.svg" alt="delete items">
+      </button>
     </div>
   </template>
   <!-- Header -->
@@ -108,7 +127,7 @@
       </div>
       <div class="info__item" id="open-cart">
         <img src="./assets/icons/cart_white.svg" alt="favorites">
-        <div class="info__big-badge">0</div>
+        <div class="info__badge" id="cart-quatity">0</div>
       </div>
     </div>
   </header>
@@ -435,7 +454,9 @@
       <div class="cart__step">
         <h3 class="cart__subtitle">Step 1</h3>
         <div class="cart__table">
-          <div class="cart__empty">There is nothing to see! Go shopping!</div>
+          <div class="cart__table-header"></div>
+          <div class="cart__table-body"></div>
+          <div class="cart__table-footer"></div>
         </div>
       </div>
       <div class="cart__step">

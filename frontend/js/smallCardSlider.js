@@ -1,5 +1,6 @@
 import { data } from "./data.js"
 import { mixArr, getFourElements } from "./helpers.js"
+import { addItemToCart } from "./cart.js"
 
 export function smallCardSlider(targetID) {
 
@@ -19,10 +20,15 @@ export function smallCardSlider(targetID) {
 
     const clone = template.content.cloneNode(true)
 
+    const addButton = clone.querySelector('.add-to-cart')
+
     clone.querySelector('.small-card__img').src = data.productImg.slice(1) 
     clone.querySelector('.small-card__title').textContent = data.title 
     clone.querySelector('.small-card__new-price').textContent = `$${data.specialPrice}` 
     clone.querySelector('.small-card__old-price').textContent = data.regularPrice ? `$${data.regularPrice}` : ''
+
+    addButton.value = data.id
+    addButton.addEventListener('click', addItemToCart)
 
     if(!data.freeShipping) {
       clone.querySelector('#free-shipping').style.display = 'none'
