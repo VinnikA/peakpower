@@ -16,6 +16,11 @@ export function smallCardSlider(targetID) {
   
   const mixData = mixArr(data)
 
+  const addAndOpenCart = (e) => {
+    addItemToCart(e)
+    document.querySelector('#cart').classList.remove('overlay_hidden')
+  }
+
   const renderItem = (data) => {
 
     const clone = template.content.cloneNode(true)
@@ -28,7 +33,7 @@ export function smallCardSlider(targetID) {
     clone.querySelector('.small-card__old-price').textContent = data.regularPrice ? `$${data.regularPrice}` : ''
 
     addButton.value = data.id
-    addButton.addEventListener('click', addItemToCart)
+    addButton.addEventListener('click', addAndOpenCart)
 
     if(!data.freeShipping) {
       clone.querySelector('#free-shipping').style.display = 'none'

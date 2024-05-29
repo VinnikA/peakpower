@@ -1,4 +1,5 @@
 import { cartTable } from "./cartTable.js"
+import { data } from "./data.js"
 
 export function cart() {
 
@@ -9,8 +10,9 @@ export function cart() {
   let quantity = inLocal.length > 0 ? inLocal?.map(item => item.quantity).reduce((result, item) => result + item) : '0'
   cartQuatity.innerText = quantity
 
+  const container = document.querySelector('.cart__table-body')
+
   if(!inLocal?.length) {
-    const container = document.querySelector('.cart__table-body')
     container.innerHTML = ''
     const empty = document.createElement('div')
     empty.classList.add('cart__empty')
@@ -18,6 +20,17 @@ export function cart() {
     container.appendChild(empty)
   } else {
     cartTable()
+    const totalPriceDiv = document.createElement('div')
+    totalPriceDiv.classList.add('cart__total-price') 
+    let totalPrice = 0 
+    inLocal.forEach(el => {
+      const item = data.find(item => item.id === el.id)
+      const price = item.specialPrice * el.quantity
+      totalPrice = totalPrice + price
+    })
+    totalPriceDiv.innerHTML = `Total price: 
+    <span>$${totalPrice.toFixed(2)}</span> `
+    container.appendChild(totalPriceDiv)
   }
 
 }

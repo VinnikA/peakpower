@@ -953,6 +953,15 @@ body {
   align-items: center;
   justify-content: center;
 }
+.cart__total-price {
+  display: flex;
+  justify-content: end;
+  margin: 0 52px 0 0;
+}
+.cart__total-price span {
+  padding: 0 16px 0 12px;
+  text-decoration: underline;
+}
 .item {
   height: 48px;
   display: flex;
