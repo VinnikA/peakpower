@@ -1,6 +1,6 @@
 export function timer() {
 
-  const targetDate = new Date("May 25, 2024 23:59:59").getTime();
+  const targetDate = new Date("May 30, 2024 23:59:59").getTime();
 
     const timerInterval = setInterval(function() {
         const now = new Date().getTime();

@@ -981,9 +981,18 @@ body {
   outline: none;
   background-color: var(--bg-body);
   color: var(--white);
-  font-size: 26px;
+  font-size: 32px;
+  font-weight: 400;
   line-height: 1;
   padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item__btn_minus {
+  background-image: url('../assets/icons/minus_white.svg');
+}
+.item__btn_plus {
+  background-image: url('../assets/icons/plus_white.svg');
 }
 .item__price {
   width: 90px;
@@ -999,4 +1008,7 @@ body {
   outline: none;
   background-color: transparent;
   cursor: pointer;
+  background-image: url('../assets/icons/trash_white.svg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
