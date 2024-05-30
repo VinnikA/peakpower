@@ -10,6 +10,9 @@ export function cart() {
   let quantity = inLocal.length > 0 ? inLocal?.map(item => item.quantity).reduce((result, item) => result + item) : '0'
   cartQuatity.innerText = quantity
 
+  const getItBtn = document.querySelector('#cart-get-it')
+  getItBtn.disabled = (quantity == '0')
+
   const container = document.querySelector('.cart__table-body')
 
   if(!inLocal?.length) {

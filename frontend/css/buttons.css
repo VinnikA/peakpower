@@ -1,6 +1,7 @@
 /* buttons */
 /* cta-button */
 .cta-btn {
+  display: block;
   position: relative;
   width: 220px;
   height: 62px;
@@ -10,6 +11,9 @@
   border: none;
   outline: none;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta-btn::before {
   content: '>>';
@@ -26,6 +30,10 @@
 }
 .cta-btn_wide::after {
   right: 10%;
+}
+.cta-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 /* glass-button */
 .glass-btn {

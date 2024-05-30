@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Peak Power</title>
 </head>
 <body>
   <!-- Templates -->
-  <!-- Small card template -->
   <template class="small-card-template">
     <div class="small-card">
       <div class="small-card__img-box">
@@ -23,13 +22,13 @@
       <button class="arrow-right-btn add-to-cart">Add to cart</button>
       <div class="small-badge-box">
         <div class="small-badge" id="discount-on-the-second-item">
-          <img src="../assets/icons/persent_icon_color.svg" alt="discount on the second item">
+          <img src="./assets/icons/persent_icon_color.svg" alt="discount on the second item">
         </div>
         <div class="small-badge" id="free-shipping">
-          <img src="../assets/icons/Delivery_icon_color.svg" alt="free shipping">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="free shipping">
         </div>
         <div class="small-badge" id="discount-on-first-order">
-          <img src="../assets/icons/Prize_icon_color.svg" alt="discount on first order">
+          <img src="./assets/icons/Prize_icon_color.svg" alt="discount on first order">
         </div>
       </div>
     </div>
@@ -51,7 +50,7 @@
   <header class="header container">
     <div class="header_logo">
       <a href="#">
-        <img src="../assets/images/LOGO.png" alt="logo">
+        <img src="./assets/images/LOGO.png" alt="logo">
       </a>
     </div>
     <nav class="header__nav nav">
@@ -60,7 +59,7 @@
           <a href="./about.html" class="nav__link">About</a>
         </li>
         <li class="nav__item">
-          <a href="../index.html" class="nav__link nav__link_active">Shop</a>
+          <a href="./index.html" class="nav__link nav__link_active">Shop</a>
         </li>
         <li class="nav__item">
           <a href="./promotion.html" class="nav__link">Promotion</a>
@@ -75,19 +74,19 @@
     </nav>
     <div class="header__info info">
       <!-- <div class="info__item">
-        <img src="../assets/icons/Heart_color_filled.svg" alt="favorites">
+        <img src="./assets/icons/Heart_color_filled.svg" alt="favorites">
         <div class="info__title">Favorites</div>
       </div> -->
       <div class="info__item">
-        <img src="../assets/icons/headset_white.svg" alt="favorites">
+        <img src="./assets/icons/headset_white.svg" alt="favorites">
         <div class="info__title">Help</div>
       </div>
       <!-- <div class="info__item">
-        <img src="../assets/icons/world_white.svg" alt="favorites">
+        <img src="./assets/icons/world_white.svg" alt="favorites">
         <div class="info__title">EN</div>
       </div> -->
       <div class="info__item" id="open-cart">
-        <img src="../assets/icons/cart_white.svg" alt="favorites">
+        <img src="./assets/icons/cart_white.svg" alt="favorites">
         <div class="info__badge" id="cart-quatity">0</div>
       </div>
     </div>
@@ -98,19 +97,19 @@
     <div class="container">
       <div class="promotion">
         <a href="./promotion.html" class="promotion__link">
-          <img src="../assets/icons/Prize_icon_color.svg" alt="icon">
+          <img src="./assets/icons/Prize_icon_color.svg" alt="icon">
           <span class="promotion__description">
             -10% on first order on the website
           </span>
         </a>
         <a href="./promotion.html" class="promotion__link">
-          <img src="../assets/icons/persent_icon_color.svg" alt="icon">
+          <img src="./assets/icons/persent_icon_color.svg" alt="icon">
           <span class="promotion__description">
             Buy 1 get 1 -50% SALE
           </span>
         </a>
         <a href="./promotion.html" class="promotion__link">
-          <img src="../assets/icons/Delivery_icon_color.svg" alt="icon">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="icon">
           <span class="promotion__description">
             Free Express Shipping over $99!
           </span>
@@ -125,9 +124,9 @@
             <div class="search__category">
               <div class="search__title">
                 Sport nutrition
-                <img src="../assets/icons/down-white.svg" alt="down" class="search__arrow">
+                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
               </div>
-              <ul class="search__list">
+              <ul class="search__list" id="search-go-to-nutrition">
                 <li class="search__item search__item_main">Proteins</li>
                 <li class="search__item">Proteins isolates</li>
                 <li class="search__item">Proteins concentrates</li>
@@ -156,9 +155,9 @@
             <div class="search__category">
               <div class="search__title">
                 Sporting goods
-                <img src="../assets/icons/down-white.svg" alt="down" class="search__arrow">
+                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
               </div> 
-              <ul class="search__list">
+              <ul class="search__list" id="search-go-to-sporting-goods">
                 <li class="search__item search__item_main">Cardio workouts</li>
                 <li class="search__item">Treadmills</li>
                 <li class="search__item">Exercise bikes</li>
@@ -193,72 +192,84 @@
         </div>
       </div>
     </div>
-    <!-- Sporting goods store -->
+    <!-- Choose section -->
     <div class="container">
-      <!-- Products section Dumbbells and barbells -->
-      <div class="products products_top-section">
-        <div class="products__info-block">
-          <h2 class="products__title">Dumbbells and barbells</h2>
-          <p class="products__subcategory">Dumbbells of various weights</p>
-          <p class="products__subcategory">Barbells and bars</p>
-          <p class="products__subcategory">BDumbbell and barbell sets</p>
-          <p class="products__subcategory">Accessories for dumbbells and barbells</p>
-          <button class="glass-btn glass-btn_big">Go to section</button>
+      <div class="choose choose_gradient">
+        <div class="choose__text">
+          <h2 class="choose__title">
+            Choose for yourself <br/> sports nutrition <br/> in two steps!
+          </h2>
+          <p class="choose__description">
+            If you are not sure what sports nutrition best suits you, choose your gender and purpose training for further recommendations.
+          </p>
         </div>
-        <div class="products__cards" id="dumbbells and barbells"></div>
+        <div class="choose__photo choose__photo_men">
+          <div class="choose__btn-wrapper">
+            <button class="glass-btn">Men</button>
+          </div>
+        </div>
+        <div class="choose__photo choose__photo_women">
+          <div class="choose__btn-wrapper">
+            <button class="glass-btn">Women</button>
+          </div>
+        </div>
       </div>
-      <div class="devider"></div>
-      <!-- Products section Fitness equipment -->
+    </div>
+    <!-- Nutrition store -->
+    <div class="container">
+      <!-- Products section Proteins-->
       <div class="products">
         <div class="products__info-block">
-          <h2 class="products__title">Fitness equipment</h2>
-          <p class="products__subcategory">Strength training machines</p>
-          <p class="products__subcategory">Resistance bands and loops</p>
-          <p class="products__subcategory">Push-up bars and pull-up bars</p>
-          <p class="products__subcategory">Cable systems and pulleys</p>
+          <h2 class="products__title">Proteins</h2>
+          <p class="products__subcategory">Protein isolates</p>
+          <p class="products__subcategory">Protein concentrates</p>
+          <p class="products__subcategory">Blend protein mixes</p>
+          <p class="products__subcategory">Protein bars</p>
           <button class="glass-btn glass-btn_big">Go to section</button>
         </div>
-        <div class="products__cards" id="fitness equipment"></div>
+        <div class="products__cards" id="proteins"></div>
       </div>
       <div class="devider"></div>
-      <!-- Products section Cardio Workouts -->
+      <!-- Products section Fat Burners -->
       <div class="products">
         <div class="products__info-block">
-          <h2 class="products__title">Cardio Workouts</h2>
-          <p class="products__subcategory">Treadmills</p>
-          <p class="products__subcategory">Exercise bikes</p>
-          <p class="products__subcategory">Elliptical trainers</p>
+          <h2 class="products__title">Fat Burners</h2>
+          <p class="products__subcategory">Thermogenic supplements</p>
+          <p class="products__subcategory">Herbal and extract-based fat burners</p>
+          <p class="products__subcategory">Metabolism-boosting complexes</p>
+          <p class="products__subcategory">Fat burners for women</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
+        </div>
+        <div class="products__cards" id="BCAA"></div>
+      </div>
+      <div class="devider"></div>
+      <!-- Products section BCAA-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">BCAA</h2>
+          <p class="products__subcategory">Pure BCAA powders</p>
+          <p class="products__subcategory">BCAA in capsules</p>
+          <p class="products__subcategory">BCAA complexes with additives</p>
           <p class="products__subcategory">BCAA blends for recovery</p>
-          <button class="glass-btn glass-btn_big">Rowing machines</button>
-        </div>
-        <div class="products__cards" id="cardio workouts"></div>
-      </div>
-      <div class="devider"></div>
-      <!-- Products section Sport accesories-->
-      <div class="products">
-        <div class="products__info-block">
-          <h2 class="products__title">Sport accesories</h2>
-          <p class="products__subcategory">Belts and wristbands</p>
-          <p class="products__subcategory">Straps and wraps for locks</p>
-          <p class="products__subcategory">Sport gloves</p>
-          <p class="products__subcategory">Fitness mats</p>
           <button class="glass-btn glass-btn_big">Go to section</button>
         </div>
-        <div class="products__cards" id="sport accessories"></div>
+        <div class="products__cards" id="fat burners"></div>
+      </div>
+      <div class="devider"></div>
+      <!-- Products section Gainers-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">Gainers</h2>
+          <p class="products__subcategory">High-carb gainer complexes</p>
+          <p class="products__subcategory">Protein gainers</p>
+          <p class="products__subcategory">Gainers with creatine</p>
+          <p class="products__subcategory">Mass gainers</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
+        </div>
+        <div class="products__cards" id="gainers"></div>
       </div>
       <div class="devider"></div>
     <!-- End of the nutrition store -->
-    </div>
-    <!-- SpecialOffer section -->
-    <div class="special-offer">
-      <div class="special-offer__sticker">
-        <h2 class="special-offer__title">
-          HOT January <br/> 
-          Buy 1 get 1 -50% SALE  </h2>
-        <div class="special-offer__btn-wrapper">
-          <button class="arrow-right-btn">Let's shopping</button>
-        </div>
-      </div>
     </div>
     <!-- cart pop-up -->
     <div class="overlay overlay_hidden" id="cart">
@@ -288,7 +299,7 @@
             <label for="cart-message" class="popup-form__label">Message</label>
             <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
             <div class="popup__btn-box">
-              <button type="submit" class="cta-btn">Get it!</button>
+              <button type="submit" class="cta-btn" id="cart-get-it">Get it!</button>
             </div>
           </form>
         </div>
@@ -302,7 +313,7 @@
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__logo">
-            <img src="../assets/images/LOGO.png" alt="logo">
+            <img src="./assets/images/LOGO.png" alt="logo">
           </div>
           <div class="footer__menu menu">
             <div class="menu__block">
@@ -349,26 +360,26 @@
           <div class="footer__payment">
             <h2 class="footer__title">Pay securely with</h2>
             <div class="footer__img">
-              <img src="../assets/images/payment.png" alt="payment">
+              <img src="./assets/images/payment.png" alt="payment">
             </div>
           </div>
           <div class="footer__social">
             <h2 class="footer__title">Social networks</h2>
             <div class="footer__social-icons">
               <a href="#" class="footer__link">
-                <img src="../assets/icons/instagram.svg" alt="instagram" class="footer__icon">
+                <img src="./assets/icons/instagram.svg" alt="instagram" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/skype.svg" alt="skype" class="footer__icon">
+                <img src="./assets/icons/skype.svg" alt="skype" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/youtube.svg" alt="youtube" class="footer__icon">
+                <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
+                <img src="./assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
+                <img src="./assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
               </a>
             </div>
           </div>
@@ -376,6 +387,6 @@
       </footer>
     </div>
   </main>
-  <script type="module" src="../js/index.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>

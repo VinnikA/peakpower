@@ -18,7 +18,8 @@ export function smallCardSlider(targetID) {
 
   const addAndOpenCart = (e) => {
     addItemToCart(e)
-    document.querySelector('#cart').classList.remove('overlay_hidden')
+    document.querySelector('.overlay').classList.remove('overlay_hidden')
+    document.querySelector('#cart').classList.remove('popup_hidden')
   }
 
   const renderItem = (data) => {
@@ -27,7 +28,7 @@ export function smallCardSlider(targetID) {
 
     const addButton = clone.querySelector('.add-to-cart')
 
-    clone.querySelector('.small-card__img').src = data.productImg.slice(1) 
+    clone.querySelector('.small-card__img').src = data.productImg 
     clone.querySelector('.small-card__title').textContent = data.title 
     clone.querySelector('.small-card__new-price').textContent = `$${data.specialPrice}` 
     clone.querySelector('.small-card__old-price').textContent = data.regularPrice ? `$${data.regularPrice}` : ''

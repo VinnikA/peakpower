@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Peak Power</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
   <header class="header container">
     <div class="header_logo">
       <a href="#">
-        <img src="../assets/images/LOGO.png" alt="logo">
+        <img src="./assets/images/LOGO.png" alt="logo">
       </a>
     </div>
     <nav class="header__nav nav">
@@ -35,7 +35,7 @@
           <a href="./about.html" class="nav__link">About</a>
         </li>
         <li class="nav__item">
-          <a href="../index.html" class="nav__link">Shop</a>
+          <a href="./index.html" class="nav__link">Shop</a>
         </li>
         <li class="nav__item">
           <a href="#" class="nav__link nav__link_active">Promotion</a>
@@ -50,19 +50,19 @@
     </nav>
     <div class="header__info info">
       <!-- <div class="info__item">
-        <img src="../assets/icons/Heart_color_filled.svg" alt="favorites">
+        <img src="./assets/icons/Heart_color_filled.svg" alt="favorites">
         <div class="info__title">Favorites</div>
       </div> -->
       <div class="info__item">
-        <img src="../assets/icons/headset_white.svg" alt="favorites">
+        <img src="./assets/icons/headset_white.svg" alt="favorites">
         <div class="info__title">Help</div>
       </div>
       <!-- <div class="info__item">
-        <img src="../assets/icons/world_white.svg" alt="favorites">
+        <img src="./assets/icons/world_white.svg" alt="favorites">
         <div class="info__title">EN</div>
       </div> -->
       <div class="info__item" id="open-cart">
-        <img src="../assets/icons/cart_white.svg" alt="favorites">
+        <img src="./assets/icons/cart_white.svg" alt="favorites">
         <div class="info__badge" id="cart-quatity">0</div>
       </div>
     </div>
@@ -74,7 +74,7 @@
       <div class="promo-block__topper">
         <div class="container">
           <div class="promo-block__title">
-            <img src="../assets/icons/persent_icon_color.svg" alt="-10%" class="promo-block__icon">
+            <img src="./assets/icons/persent_icon_color.svg" alt="-10%" class="promo-block__icon">
             <h2 class="promo-block__message">
               -10% on first order on the website
             </h2>
@@ -124,7 +124,7 @@
       <div class="promo-block__topper">
         <div class="container">
           <div class="promo-block__title">
-            <img src="../assets/icons/Delivery_icon_color.svg" alt="free-shippinng" class="promo-block__icon">
+            <img src="./assets/icons/Delivery_icon_color.svg" alt="free-shippinng" class="promo-block__icon">
             <h2 class="promo-block__message">
               Free Express Shipping over $99!
             </h2>
@@ -173,7 +173,7 @@
       <div class="promo-block__topper">
         <div class="container">
           <div class="promo-block__title">
-            <img src="../assets/icons/Prize_icon_color.svg" alt="sale" class="promo-block__icon">
+            <img src="./assets/icons/Prize_icon_color.svg" alt="sale" class="promo-block__icon">
             <h2 class="promo-block__message">
               Buy 1 get 1 -50% SALE
             </h2>
@@ -211,49 +211,13 @@
         </div>
       </div>
     </div>
-    <!-- cart pop-up -->
-    <div class="overlay overlay_hidden" id="cart">
-      <div class="popup cart">
-        <button class="popup__close-btn"></button>
-        <h2 class="popup__title">Cart</h2>
-        <div class="cart__step">
-          <h3 class="cart__subtitle">Step 1</h3>
-          <div class="cart__table">
-            <div class="cart__table-header"></div>
-            <div class="cart__table-body"></div>
-            <div class="cart__table-footer"></div>
-          </div>
-        </div>
-        <div class="cart__step">
-          <h3 class="cart__subtitle">Step 2</h3>
-          <label for="promo-code" class="cart__label">Promo code <span>(if have)</span> </label>
-          <input type="text" class="cart__promo-code" id="promo-code" placeholder="8 - 16 symbols">
-        </div>
-        <div class="cart__step">
-          <h3 class="cart__subtitle">Step 3</h3>
-          <form action="#" class="popup-form" id="cart-form">
-            <label for="cart-name" class="popup-form__label">Name</label>
-            <input type="text" id="cart-name" class="popup-form__input">
-            <label for="cart-communication" class="popup-form__label">Telephone or email</label>
-            <input type="text" id="cart-communication" class="popup-form__input">
-            <label for="cart-message" class="popup-form__label">Message</label>
-            <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
-            <div class="popup__btn-box">
-              <button type="submit" class="cta-btn">Get it!</button>
-            </div>
-          </form>
-        </div>
-        <div class="popup__btn-box">
-          <button class="ghost-btn" id="continue-shopping">Continue shopping</button>
-        </div>
-      </div>
-    </div>
+  </main>
     <!-- Footer -->
     <div class="container">
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__logo">
-            <img src="../assets/images/LOGO.png" alt="logo">
+            <img src="./assets/images/LOGO.png" alt="logo">
           </div>
           <div class="footer__menu menu">
             <div class="menu__block">
@@ -300,33 +264,70 @@
           <div class="footer__payment">
             <h2 class="footer__title">Pay securely with</h2>
             <div class="footer__img">
-              <img src="../assets/images/payment.png" alt="payment">
+              <img src="./assets/images/payment.png" alt="payment">
             </div>
           </div>
           <div class="footer__social">
             <h2 class="footer__title">Social networks</h2>
             <div class="footer__social-icons">
               <a href="#" class="footer__link">
-                <img src="../assets/icons/instagram.svg" alt="instagram" class="footer__icon">
+                <img src="./assets/icons/instagram.svg" alt="instagram" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/skype.svg" alt="skype" class="footer__icon">
+                <img src="./assets/icons/skype.svg" alt="skype" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/youtube.svg" alt="youtube" class="footer__icon">
+                <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
+                <img src="./assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
+                <img src="./assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
               </a>
             </div>
           </div>
         </div>
       </footer>
     </div>
-  </main>
-  <script type="module" src="../js/index.js"></script>
+  <!-- cart pop-up -->
+  <div class="overlay overlay_hidden" id="cart">
+    <div class="popup cart">
+      <button class="popup__close-btn"></button>
+      <h2 class="popup__title">Cart</h2>
+      <div class="cart__step">
+        <h3 class="cart__subtitle">Step 1</h3>
+        <div class="cart__table">
+          <div class="cart__table-header"></div>
+          <div class="cart__table-body"></div>
+          <div class="cart__table-footer"></div>
+        </div>
+      </div>
+      <div class="cart__step">
+        <h3 class="cart__subtitle">Step 2</h3>
+        <label for="promo-code" class="cart__label">Promo code <span>(if have)</span> </label>
+        <input type="text" class="cart__promo-code" id="promo-code" placeholder="8 - 16 symbols">
+      </div>
+      <div class="cart__step">
+        <h3 class="cart__subtitle">Step 3</h3>
+        <form action="#" class="popup-form" id="cart-form">
+          <label for="cart-name" class="popup-form__label">Name</label>
+          <input type="text" id="cart-name" class="popup-form__input">
+          <label for="cart-communication" class="popup-form__label">Telephone or email</label>
+          <input type="text" id="cart-communication" class="popup-form__input">
+          <label for="cart-message" class="popup-form__label">Message</label>
+          <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
+          <div class="popup__btn-box">
+            <button type="submit" class="cta-btn" id="cart-get-it">Get it!</button>
+          </div>
+        </form>
+      </div>
+      <div class="popup__btn-box">
+        <button class="ghost-btn" id="continue-shopping">Continue shopping</button>
+      </div>
+    </div>
+  </div>
+  <!-- End -->
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>

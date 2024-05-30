@@ -18,7 +18,8 @@ export function bigCardSlider(targetID) {
 
   const addAndOpenCart = (e) => {
     addItemToCart(e)
-    document.querySelector('#cart').classList.remove('overlay_hidden')
+    document.querySelector('.overlay').classList.remove('overlay_hidden')
+    document.querySelector('#cart').classList.remove('popup_hidden')
   }
 
   const renderItem = (data) => {
@@ -27,7 +28,7 @@ export function bigCardSlider(targetID) {
 
     const addButton = clone.querySelector('.add-to-cart')
 
-    clone.querySelector('.big-card__img').src = data.productImg.slice(1) 
+    clone.querySelector('.big-card__img').src = data.productImg 
     clone.querySelector('.big-card__title').textContent = data.title 
     clone.querySelector('.big-card__description').textContent = data.description 
     clone.querySelector('.big-card__new-price').textContent = `$${data.specialPrice}` 
@@ -50,19 +51,15 @@ export function bigCardSlider(targetID) {
   }
 
   leftBtn.addEventListener('click', () => {
-
     start = start + 1
     container.innerHTML = ''
-    getTwoElements(data, start).forEach(renderItem)
-    
+    getTwoElements(data, start).forEach(renderItem) 
   })
 
   rightBtn.addEventListener('click', () => {
-
     start = start > 0 ? start - 1 : start = mixData.length
     container.innerHTML = ''
     getTwoElements(data, start).forEach(renderItem)
-    
   })
 
   mixData.slice(start, end).forEach(renderItem)

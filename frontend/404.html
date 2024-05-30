@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Peak Power</title>
 </head>
 <body>
@@ -26,16 +26,16 @@
   <header class="header container">
     <div class="header_logo">
       <a href="#">
-        <img src="../assets/images/LOGO.png" alt="logo">
+        <img src="./assets/images/LOGO.png" alt="logo">
       </a>
     </div>
     <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="#" class="nav__link">About</a>
+          <a href="./about.html" class="nav__link">About</a>
         </li>
         <li class="nav__item">
-          <a href="../index.html" class="nav__link">Shop</a>
+          <a href="./index.html" class="nav__link">Shop</a>
         </li>
         <li class="nav__item">
           <a href="./promotion.html" class="nav__link">Promotion</a>
@@ -50,19 +50,19 @@
     </nav>
     <div class="header__info info">
       <!-- <div class="info__item">
-        <img src="../assets/icons/Heart_color_filled.svg" alt="favorites">
+        <img src="./assets/icons/Heart_color_filled.svg" alt="favorites">
         <div class="info__title">Favorites</div>
       </div> -->
       <div class="info__item">
-        <img src="../assets/icons/headset_white.svg" alt="favorites">
+        <img src="./assets/icons/headset_white.svg" alt="favorites">
         <div class="info__title">Help</div>
       </div>
       <!-- <div class="info__item">
-        <img src="../assets/icons/world_white.svg" alt="favorites">
+        <img src="./assets/icons/world_white.svg" alt="favorites">
         <div class="info__title">EN</div>
       </div> -->
       <div class="info__item" id="open-cart">
-        <img src="../assets/icons/cart_white.svg" alt="favorites">
+        <img src="./assets/icons/cart_white.svg" alt="favorites">
         <div class="info__badge" id="cart-quatity">0</div>
       </div>
     </div>
@@ -76,8 +76,8 @@
       </h2>
     </div>
   </div>
-      <!-- cart pop-up -->
-      <div class="overlay overlay_hidden" id="cart">
+  <!-- cart pop-up -->
+  <div class="overlay overlay_hidden" id="cart">
         <div class="popup cart">
           <button class="popup__close-btn"></button>
           <h2 class="popup__title">Cart</h2>
@@ -104,7 +104,7 @@
               <label for="cart-message" class="popup-form__label">Message</label>
               <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
               <div class="popup__btn-box">
-                <button type="submit" class="cta-btn">Get it!</button>
+                <button type="submit" class="cta-btn" id="cart-get-it">Get it!</button>
               </div>
             </form>
           </div>
@@ -112,13 +112,13 @@
             <button class="ghost-btn" id="continue-shopping">Continue shopping</button>
           </div>
         </div>
-      </div>
+  </div>
   <!-- Footer -->
   <div class="container">
       <footer class="footer">
         <div class="footer__top">
           <div class="footer__logo">
-            <img src="../assets/images/LOGO.png" alt="logo">
+            <img src="./assets/images/LOGO.png" alt="logo">
           </div>
           <div class="footer__menu menu">
             <div class="menu__block">
@@ -165,26 +165,26 @@
           <div class="footer__payment">
             <h2 class="footer__title">Pay securely with</h2>
             <div class="footer__img">
-              <img src="../assets/images/payment.png" alt="payment">
+              <img src="./assets/images/payment.png" alt="payment">
             </div>
           </div>
           <div class="footer__social">
             <h2 class="footer__title">Social networks</h2>
             <div class="footer__social-icons">
               <a href="#" class="footer__link">
-                <img src="../assets/icons/instagram.svg" alt="instagram" class="footer__icon">
+                <img src="./assets/icons/instagram.svg" alt="instagram" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/skype.svg" alt="skype" class="footer__icon">
+                <img src="./assets/icons/skype.svg" alt="skype" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/youtube.svg" alt="youtube" class="footer__icon">
+                <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
+                <img src="./assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
               </a>
               <a href="#" class="footer__link">
-                <img src="../assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
+                <img src="./assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
               </a>
             </div>
           </div>
@@ -192,6 +192,6 @@
       </footer>
   </div>
   </main>
-  <script type="module" src="../js/index.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>

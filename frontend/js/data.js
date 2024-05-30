@@ -27,7 +27,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: true,
     availableQuantity: 150,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'p002',
@@ -42,7 +42,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 200,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'p003',
@@ -57,7 +57,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 100,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'p004',
@@ -72,7 +72,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: false,
     availableQuantity: 75,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'fb001',
@@ -87,7 +87,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 120,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'fb002',
@@ -102,7 +102,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 200,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'fb003',
@@ -117,7 +117,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: true,
     availableQuantity: 150,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'fb004',
@@ -132,7 +132,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: false,
     availableQuantity: 80,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'bcaa001',
@@ -147,7 +147,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 100,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'bcaa002',
@@ -162,7 +162,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 150,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'bcaa003',
@@ -177,7 +177,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: false,
     availableQuantity: 200,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'bcaa004',
@@ -192,7 +192,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: true,
     availableQuantity: 80,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'g001',
@@ -207,7 +207,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: true,
     availableQuantity: 120,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'g002',
@@ -222,7 +222,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 150,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'g003',
@@ -237,7 +237,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 90,
-    productImg: '../assets/images/supplement-1.png'
+    productImg: './assets/images/supplement-1.png'
   },
   {
     id: 'g004',
@@ -252,7 +252,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 200,
-    productImg: '../assets/images/supplement-2.png'
+    productImg: './assets/images/supplement-2.png'
   },
   {
     id: 'db001',
@@ -267,7 +267,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 50,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'bb001',
@@ -282,7 +282,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 30,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'db002',
@@ -297,7 +297,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: true,
     availableQuantity: 100,
-    productImg: '../assets/images/dumbbells-green.png'
+    productImg: './assets/images/dumbbells-green.png'
   },
   {
     id: 'bb002',
@@ -312,7 +312,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: false,
     availableQuantity: 25,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'fe001',
@@ -327,7 +327,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 20,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'fe002',
@@ -342,7 +342,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 150,
-    productImg: '../assets/images/dumbbells-green.png'
+    productImg: './assets/images/dumbbells-green.png'
   },
   {
     id: 'fe003',
@@ -357,7 +357,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 50,
-    productImg: '../assets/images/dumbbells-green.png'
+    productImg: './assets/images/dumbbells-green.png'
   },
   {
     id: 'fe004',
@@ -372,7 +372,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 200,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'cw001',
@@ -387,7 +387,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 30,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'cw002',
@@ -402,7 +402,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: false,
     availableQuantity: 20,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'cw003',
@@ -417,7 +417,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 40,
-    productImg: '../assets/images/dumbbells-green.png'
+    productImg: './assets/images/dumbbells-green.png'
   },
   {
     id: 'cw004',
@@ -432,7 +432,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: true,
     availableQuantity: 200,
-    productImg: '../assets/images/dumbbells-green.png'
+    productImg: './assets/images/dumbbells-green.png'
   },
   {
     id: 'sa001',
@@ -447,7 +447,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 100,
-    productImg: '../assets/images/dumbbells-green.png'
+    productImg: './assets/images/dumbbells-green.png'
   },
   {
     id: 'sa002',
@@ -462,7 +462,7 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 500,
-    productImg: '../assets/images/dumbbells-green.png'
+    productImg: './assets/images/dumbbells-green.png'
   },
   {
     id: 'sa003',
@@ -477,7 +477,7 @@ export const data = [
     discountOnSecondItem: false,
     discountOnFirstOrder: true,
     availableQuantity: 200,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   },
   {
     id: 'sa004',
@@ -492,6 +492,6 @@ export const data = [
     discountOnSecondItem: true,
     discountOnFirstOrder: false,
     availableQuantity: 300,
-    productImg: '../assets/images/dumbbells-black.png'
+    productImg: './assets/images/dumbbells-black.png'
   }
 ]
