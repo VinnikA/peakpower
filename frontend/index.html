@@ -235,12 +235,15 @@
       <div class="container">
         <div class="hero__promo">
           <p class="promo">
-            <span class="promo_yellow">Buy 1</span> whey gold standart <br />
-            <span class="promo_yellow">Get 1</span> - 50 % OFF
+            <span class="promo_yellow">NEW PRODUCTS</span> are already <br />
+            <span class="promo_yellow">AVALIBLE FOR</span> purchase with <br />
+            <span class="promo_yellow">HUGE DISCOUNTS</span>
           </p>
-          <button class="cta-btn" id="hero-get-it-btn">
-            Get it!
-          </button>
+          <div class="hero__btn-box">
+            <a href="./nutrition-store.html" class="cta-btn" id="hero-get-it-btn">
+              Get it!
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -342,11 +345,17 @@
       <div class="form">
         <form action="#" class="form__body">
           <h2 class="form__title">Get in touch</h2>
-          <label for="userName" class="form__label">Name</label>
+          <label for="userName" class="form__label">
+            Name <span>*</span>
+          </label>
           <input type="text" id="userName" class="form__input">
-          <label for="email" class="form__label">Email</label>
+          <label for="email" class="form__label">
+            Email <span>*</span>
+          </label>
           <input type="email" id="email" class="form__input">
-          <label for="message" class="form__label">Message</label>
+          <label for="message" class="form__label">
+            Message <span>*</span>
+          </label>
           <input type="text" id="message" class="form__input">
           <div class="form__btn-wrapper">
             <button type="submit" class="arrow-right-btn">Send</button>
@@ -466,10 +475,14 @@
       <div class="cart__step">
         <h3 class="cart__subtitle">Step 3</h3>
         <form action="#" class="popup-form" id="cart-form">
-          <label for="cart-name" class="popup-form__label">Name</label>
+          <label for="cart-name" class="popup-form__label">
+            Name <span>*</span> 
+          </label>
           <input type="text" id="cart-name" class="popup-form__input">
-          <label for="cart-communication" class="popup-form__label">Telephone or email</label>
-          <input type="text" id="cart-communication" class="popup-form__input">
+          <label for="cart-communication" class="popup-form__label">
+            Telephone <span>*</span>
+          </label>
+          <input type="tel" id="cart-communication" class="popup-form__input">
           <label for="cart-message" class="popup-form__label">Message</label>
           <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
           <div class="popup__btn-box">
@@ -482,7 +495,7 @@
       </div>
     </div>
     <!-- Thanks you popup -->
-    <div class="popup popup_hidden">
+    <div class="popup popup_hidden" id="thank-you">
       <button class="popup__close-btn"></button>
       <h2 class="popup__title">
         Thank you!
@@ -492,9 +505,9 @@
         Wait for a call from our manager.
       </p>
       <div class="popup__btn-box">
-        <button class="outlined-btn" id="close-thank-you">
+        <a href="./index.html" class="outlined-btn" id="close-thank-you">
           Main page
-        </button>
+        </a>
       </div>
     </div>
     <!-- Help form -->
@@ -504,10 +517,14 @@
       <p class="popup__text">
         Ask our manager for answers:)
       </p>
-      <form action="#" class="popup-form">
-        <label for="your-email">Your email</label>
+      <form action="#" class="popup-form" id="question-form">
+        <label for="your-email" class="popup-form__label">
+          Your email <span>*</span>
+        </label>
         <input type="text" class="popup-form__input">
-        <label for="your-message">Message</label>
+        <label for="your-message" class="popup-form__label">
+          Message <span>*</span>
+        </label>
         <input type="text" class="popup-form__input">
         <div class="popup__btn-box">
           <button type="submit" class="outlined-btn">Send</button>
@@ -515,7 +532,7 @@
       </form>
     </div>
     <!-- Thank you for the question -->
-    <div class="popup popup_hidden">
+    <div class="popup popup_hidden" id="thank-you-for-the-question">
       <button class="popup__close-btn"></button>
       <h2 class="popup__title">
         Thank you for the quetion!
@@ -524,9 +541,9 @@
         We will answer you soon, check your email :)
       </p>
       <div class="popup__btn-box">
-        <button class="outlined-btn">
+        <a href="./index.html" class="outlined-btn">
           Main page
-        </button>
+        </a>
       </div>
     </div>
   </div>

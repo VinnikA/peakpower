@@ -4,9 +4,8 @@ import { formHandelr } from "./form.js";
 import { storeRows } from "./storeRows.js";
 import { smallCardSlider } from "./smallCardSlider.js";
 import { bigCardSlider } from "./bigCardSlider.js";
-// import { closePopup, openCart, openThankYou } from "./popup.js";
 import { cart } from "./cart.js";
-import { closeOverlay, openCart, openHelpForm } from "./popups.js";
+import { cartFormHandelr, closeOverlay, helpFormHandler, openCart, openHelpForm } from "./popups.js";
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -34,13 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
     storeRows()
   }
 
-  // closePopup()
-  // openCart()
   cart()
-  // openThankYou()
-
   closeOverlay()
   openCart()
   openHelpForm()
+  cartFormHandelr()
+  helpFormHandler()
 
 })

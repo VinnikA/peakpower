@@ -99,7 +99,9 @@
 }
 /* outlined and ghost button */
 .outlined-btn, .ghost-btn {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   outline: none;
   text-align: center;
