@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Lato;
+  src: url(../assets/fonts/Lato-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(../assets/fonts/Lato-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'DS Digi';
+  src: url(../assets/fonts/DS-DIGII.ttf);
+}
+
+@font-face {
+  font-family: 'Drunk Wide';
+  src: url(../assets/fonts/DrukWideTrial.ttf);
+}

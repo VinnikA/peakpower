@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Peak Power</title>
+</head>
+<body>
+  <!-- Templates -->
+  <template class="small-card-template">
+    <div class="small-card">
+      <div class="small-card__img-box">
+        <img src="#" alt="none" class="small-card__img">
+      </div>
+      <h2 class="small-card__title"></h2>
+      <div class="small-card__price-box">
+        <p class="small-card__new-price"></p>
+        <p class="small-card__old-price"></p>
+      </div>
+      <button class="arrow-right-btn add-to-cart">Add to cart</button>
+      <div class="small-badge-box">
+        <div class="small-badge" id="discount-on-the-second-item">
+          <img src="./assets/icons/persent_icon_color.svg" alt="discount on the second item">
+        </div>
+        <div class="small-badge" id="free-shipping">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="free shipping">
+        </div>
+        <div class="small-badge" id="discount-on-first-order">
+          <img src="./assets/icons/Prize_icon_color.svg" alt="discount on first order">
+        </div>
+      </div>
+    </div>
+  </template>
+  <!-- Cart table item template -->
+  <template class="cart-table-item-template">
+    <div class="cart__item item">
+      <div class="item__name"></div>
+      <div class="item__quantity-box">
+        <button class="item__btn item__btn_minus" id="remove-item"></button>
+        <div class="item__quantity"></div>
+        <button class="item__btn item__btn_plus" id="add-item"></button>
+      </div>
+      <div class="item__price"></div>
+      <button class="item__delete-btn"></button>
+    </div>
+  </template>
+  <!-- Header -->
+  <header class="header container">
+    <div class="header_logo">
+      <a href="./index.html">
+        <img src="./assets/images/LOGO.png" alt="logo">
+      </a>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="./about.html" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="./index.html" class="nav__link nav__link_active">Shop</a>
+        </li>
+        <li class="nav__item">
+          <a href="./promotion.html" class="nav__link">Promotion</a>
+        </li>
+        <li class="nav__item">
+          <a href="./contacts.html" class="nav__link">Contacts</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">Delivery</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__info info">
+      <!-- <div class="info__item">
+        <img src="./assets/icons/Heart_color_filled.svg" alt="favorites">
+        <div class="info__title">Favorites</div>
+      </div> -->
+      <div class="info__item" id="open-help-form">
+        <img src="./assets/icons/headset_white.svg" alt="favorites">
+        <div class="info__title">Help</div>
+      </div>
+      <!-- <div class="info__item">
+        <img src="./assets/icons/world_white.svg" alt="favorites">
+        <div class="info__title">EN</div>
+      </div> -->
+      <div class="info__item" id="open-cart">
+        <img src="./assets/icons/cart_white.svg" alt="favorites">
+        <div class="info__badge" id="cart-quatity">0</div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="main">
+    <!-- Promotion section -->
+    <div class="container">
+      <div class="promotion">
+        <a href="./promotion.html" class="promotion__link">
+          <img src="./assets/icons/Prize_icon_color.svg" alt="icon">
+          <span class="promotion__description">
+            -10% on first order on the website
+          </span>
+        </a>
+        <a href="./promotion.html" class="promotion__link">
+          <img src="./assets/icons/persent_icon_color.svg" alt="icon">
+          <span class="promotion__description">
+            Buy 1 get 1 -50% SALE
+          </span>
+        </a>
+        <a href="./promotion.html" class="promotion__link">
+          <img src="./assets/icons/Delivery_icon_color.svg" alt="icon">
+          <span class="promotion__description">
+            Free Express Shipping over $99!
+          </span>
+        </a>
+      </div>
+    </div>
+    <!-- Search section -->
+    <div class="search">
+      <div class="container">
+        <div class="search__wrapper">
+          <div class="search__categories">
+            <div class="search__category">
+              <div class="search__title">
+                Sport nutrition
+                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
+              </div>
+              <ul class="search__list" id="search-go-to-nutrition">
+                <li class="search__item search__item_main">Proteins</li>
+                <li class="search__item">Proteins isolates</li>
+                <li class="search__item">Proteins concentrates</li>
+                <li class="search__item">Blend protein mixes</li>
+                <li class="search__item">Proteins bars</li>
+                
+                <li class="search__item search__item_main">Fat burners</li>
+                <li class="search__item">Thermogenic suppele</li>
+                <li class="search__item">Herbal and extract-based fat burners</li>
+                <li class="search__item">Metabolism-boosting complexes</li>
+                <li class="search__item">Fat burners for women</li>
+                
+                <li class="search__item search__item_main">Gainers</li>
+                <li class="search__item">High-carb gainer complex</li>
+                <li class="search__item">Protein gainers</li>
+                <li class="search__item">Gainers with creatine</li>
+                <li class="search__item">Mass gainers</li>
+                
+                <li class="search__item search__item_main">BCAA</li>
+                <li class="search__item">Pure BCAA powder</li>
+                <li class="search__item">BCAA in capsules</li>
+                <li class="search__item">BCAA complexes with addidives</li>
+                <li class="search__item">BCAA blends for women</li>
+              </ul>
+            </div>
+            <div class="search__category">
+              <div class="search__title">
+                Sporting goods
+                <img src="./assets/icons/down-white.svg" alt="down" class="search__arrow">
+              </div> 
+              <ul class="search__list" id="search-go-to-sporting-goods">
+                <li class="search__item search__item_main">Cardio workouts</li>
+                <li class="search__item">Treadmills</li>
+                <li class="search__item">Exercise bikes</li>
+                <li class="search__item">Elliptical trainers</li>
+                <li class="search__item">Rowing machines</li>
+                
+                <li class="search__item search__item_main">Sport accesories</li>
+                <li class="search__item">Belts and wristbands</li>
+                <li class="search__item">Straps and wraps for locks</li>
+                <li class="search__item">Sport gloves</li>
+                <li class="search__item">Fitness mats</li>
+                
+                <li class="search__item search__item_main">Dumbbells and barbells</li>
+                <li class="search__item">Dumbbells of various weights</li>
+                <li class="search__item">Barbells and bars</li>
+                <li class="search__item">Dumbbells and barbell sets</li>
+                <li class="search__item">Accesories for dumbbells and barbells</li>
+                
+                <li class="search__item search__item_main">Fitnes equipment</li>
+                <li class="search__item">Strength training machines</li>
+                <li class="search__item">Resistance bands and loops</li>
+                <li class="search__item">Push-up bars and pull-up bars</li>
+                <li class="search__item">Cable systems and pulleys</li>
+              </ul>
+            </div>
+          </div>
+          <div class="search__field">
+            <form action="#" class="search__form" name="search">
+              <input type="text" class="search__input" placeholder="Search field">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Choose section -->
+    <div class="container">
+      <div class="choose choose_gradient">
+        <div class="choose__text">
+          <h2 class="choose__title">
+            Choose for yourself <br/> sports nutrition <br/> in two steps!
+          </h2>
+          <p class="choose__description">
+            If you are not sure what sports nutrition best suits you, choose your gender and purpose training for further recommendations.
+          </p>
+        </div>
+        <div class="choose__photo choose__photo_men">
+          <div class="choose__btn-wrapper">
+            <button class="glass-btn">Men</button>
+          </div>
+        </div>
+        <div class="choose__photo choose__photo_women">
+          <div class="choose__btn-wrapper">
+            <button class="glass-btn">Women</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nutrition store -->
+    <div class="container">
+      <!-- Products section Proteins-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">Proteins</h2>
+          <p class="products__subcategory">Protein isolates</p>
+          <p class="products__subcategory">Protein concentrates</p>
+          <p class="products__subcategory">Blend protein mixes</p>
+          <p class="products__subcategory">Protein bars</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
+        </div>
+        <div class="products__cards" id="proteins"></div>
+      </div>
+      <div class="devider"></div>
+      <!-- Products section Fat Burners -->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">Fat Burners</h2>
+          <p class="products__subcategory">Thermogenic supplements</p>
+          <p class="products__subcategory">Herbal and extract-based fat burners</p>
+          <p class="products__subcategory">Metabolism-boosting complexes</p>
+          <p class="products__subcategory">Fat burners for women</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
+        </div>
+        <div class="products__cards" id="BCAA"></div>
+      </div>
+      <div class="devider"></div>
+      <!-- Products section BCAA-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">BCAA</h2>
+          <p class="products__subcategory">Pure BCAA powders</p>
+          <p class="products__subcategory">BCAA in capsules</p>
+          <p class="products__subcategory">BCAA complexes with additives</p>
+          <p class="products__subcategory">BCAA blends for recovery</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
+        </div>
+        <div class="products__cards" id="fat burners"></div>
+      </div>
+      <div class="devider"></div>
+      <!-- Products section Gainers-->
+      <div class="products">
+        <div class="products__info-block">
+          <h2 class="products__title">Gainers</h2>
+          <p class="products__subcategory">High-carb gainer complexes</p>
+          <p class="products__subcategory">Protein gainers</p>
+          <p class="products__subcategory">Gainers with creatine</p>
+          <p class="products__subcategory">Mass gainers</p>
+          <button class="glass-btn glass-btn_big">Go to section</button>
+        </div>
+        <div class="products__cards" id="gainers"></div>
+      </div>
+      <div class="devider"></div>
+    <!-- End of the nutrition store -->
+    </div>
+  </main>
+<!-- Footer -->
+<div class="container">
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="./assets/images/LOGO.png" alt="logo">
+      </div>
+      <div class="footer__menu menu">
+        <div class="menu__block">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Help</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Delivery and return policy</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Frequently asked questions</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contacts us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Privacy policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__block">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Company</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contests & giveaways</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__up-btn-wrapper">
+        <a href="#" class="up-btn"></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__payment">
+        <h2 class="footer__title">Pay securely with</h2>
+        <div class="footer__img">
+          <img src="./assets/images/payment.png" alt="payment">
+        </div>
+      </div>
+      <div class="footer__social">
+        <h2 class="footer__title">Social networks</h2>
+        <div class="footer__social-icons">
+          <a href="#" class="footer__link">
+            <img src="./assets/icons/instagram.svg" alt="instagram" class="footer__icon">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="./assets/icons/skype.svg" alt="skype" class="footer__icon">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__icon">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="./assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
+          </a>
+          <a href="#" class="footer__link">
+            <img src="./assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+    <!-- Overlay -->
+    <div class="overlay overlay_hidden">
+      <!-- Cart pop-up -->
+      <div class="popup popup_hidden" id="cart">
+       <button class="popup__close-btn"></button>
+       <h2 class="popup__title">Cart</h2>
+       <div class="cart__step">
+         <h3 class="cart__subtitle">Step 1</h3>
+         <div class="cart__table">
+           <div class="cart__table-header"></div>
+           <div class="cart__table-body"></div>
+           <div class="cart__table-footer"></div>
+         </div>
+       </div>
+       <div class="cart__step">
+         <h3 class="cart__subtitle">Step 2</h3>
+         <label for="promo-code" class="cart__label">Promo code <span>(if have)</span> </label>
+         <input type="text" class="cart__promo-code" id="promo-code" placeholder="8 - 16 symbols">
+       </div>
+       <div class="cart__step">
+         <h3 class="cart__subtitle">Step 3</h3>
+         <form action="#" class="popup-form" id="cart-form">
+           <label for="cart-name" class="popup-form__label">
+             Name <span>*</span> 
+           </label>
+           <input type="text" id="cart-name" class="popup-form__input">
+           <label for="cart-communication" class="popup-form__label">
+             Telephone <span>*</span>
+           </label>
+           <input type="tel" id="cart-communication" class="popup-form__input">
+           <label for="cart-message" class="popup-form__label">Message</label>
+           <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
+           <div class="popup__btn-box">
+             <button type="submit" class="cta-btn" id="cart-get-it">Get it!</button>
+           </div>
+         </form>
+       </div>
+       <div class="popup__btn-box">
+         <button class="ghost-btn" id="continue-shopping">Continue shopping</button>
+       </div>
+     </div>
+     <!-- Thanks you popup -->
+     <div class="popup popup_hidden" id="thank-you">
+       <button class="popup__close-btn"></button>
+       <h2 class="popup__title">
+         Thank you!
+       </h2>
+       <p class="popup__text">
+         Your order has been accepted! <br/>
+         Wait for a call from our manager.
+       </p>
+       <div class="popup__btn-box">
+         <a href="./index.html" class="outlined-btn" id="close-thank-you">
+           Main page
+         </a>
+       </div>
+     </div>
+     <!-- Help form -->
+     <div class="popup popup_hidden" id="help-form">
+       <button class="popup__close-btn"></button>
+       <h2 class="popup__title">Have any questions?</h2>
+       <p class="popup__text">
+         Ask our manager for answers:)
+       </p>
+       <form action="#" class="popup-form" id="question-form">
+         <label for="your-email" class="popup-form__label">
+           Your email <span>*</span>
+         </label>
+         <input type="text" class="popup-form__input">
+         <label for="your-message" class="popup-form__label">
+           Message <span>*</span>
+         </label>
+         <input type="text" class="popup-form__input">
+         <div class="popup__btn-box">
+           <button type="submit" class="outlined-btn">Send</button>
+         </div>
+       </form>
+     </div>
+     <!-- Thank you for the question -->
+     <div class="popup popup_hidden" id="thank-you-for-the-question">
+       <button class="popup__close-btn"></button>
+       <h2 class="popup__title">
+         Thank you for the quetion!
+       </h2>
+       <p class="popup__text">
+         We will answer you soon, check your email :)
+       </p>
+       <div class="popup__btn-box">
+         <a href="./index.html" class="outlined-btn">
+           Main page
+         </a>
+       </div>
+     </div>
+   </div>
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
