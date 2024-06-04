@@ -6,7 +6,7 @@ const httpErrorMessages = {
   409: 'Conflict',
 };
 
-class HttpErrors extends Error {
+class HttpError extends Error {
   constructor(status, message = httpErrorMessages[status]) {
     super(message);
     this.status = status;
@@ -14,7 +14,7 @@ class HttpErrors extends Error {
 }
 
 const errors = {
-  HttpErrors,
+  HttpError,
 };
 
 module.exports = errors;

@@ -4,6 +4,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const { errorHandler } = require('./src/helpers');
+const { productRouter, authRouter } = require('./src/routes');
 
 console.clear();
 
@@ -18,6 +19,9 @@ app.use(express.json());
 app.get('/api/hello', (req, res) => {
   res.status(200).json({ message: 'Hello world' });
 });
+
+app.use('/api/products', productRouter);
+app.use('/api/auth', authRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Not found' });
