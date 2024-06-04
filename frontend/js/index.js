@@ -6,6 +6,7 @@ import { smallCardSlider } from "./smallCardSlider.js";
 import { bigCardSlider } from "./bigCardSlider.js";
 import { cart } from "./cart.js";
 import { cartFormHandelr, closeOverlay, helpFormHandler, openCart, openHelpForm } from "./popups.js";
+import { testimonialSlider } from "./testimonialSlider.js";
 
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -31,6 +32,10 @@ document.addEventListener("DOMContentLoaded", function() {
     categories()
     search()
     storeRows()
+  }
+
+  if(page.includes('about')) {
+    testimonialSlider()
   }
 
   cart()
