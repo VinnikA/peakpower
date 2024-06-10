@@ -1,13 +1,19 @@
-const express = require('express')
-const app = express()
+const app = require('./app');
+const mongoose = require('mongoose');
 
-const PORT = process.env.PORT || 3030
+const { PORT = 7777, DB_PEAKPOWER } = process.env;
 
-const db = require('./models')
+mongoose.set('strictQuery', true);
 
-db.sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`)
+mongoose
+  .connect(DB_PEAKPOWER)
+  .then(() => {
+    app.listen(PORT, () => {
+      console.log(`Server running. Use our API on port: ${PORT}`);
+    });
+    console.log('Database connection successful');
   })
-})
-
+  .catch((err) => {
+    console.log(err.message);
+    process.exit(1);
+  });

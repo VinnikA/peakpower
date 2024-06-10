@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Peak Power</title>
+</head>
+<body>
+  <!-- Templates -->
+  <!-- Cart table item template -->
+  <template class="cart-table-item-template">
+    <div class="cart__item item">
+      <div class="item__name"></div>
+      <div class="item__quantity-box">
+        <button class="item__btn item__btn_minus" id="remove-item"></button>
+        <div class="item__quantity"></div>
+        <button class="item__btn item__btn_plus" id="add-item"></button>
+      </div>
+      <div class="item__price"></div>
+      <button class="item__delete-btn"></button>
+    </div>
+  </template>
+  <!-- Testimonial card template -->
+  <template class="testimonial-card-template">
+    <div class="testimonial">
+      <div class="testimonial__img">
+        <img src="#" alt="testimonial">
+      </div>
+      <div class="testimonial__text">
+        <p class="testimonial__paragrapth testimonial__paragrapth_name"></p>
+        <p class="testimonial__paragrapth testimonial__paragrapth_role"></p>
+        <p class="testimonial__paragrapth testimonial__paragrapth_review"></p>
+      </div>
+      <div class="testimonials__stars"></div>
+    </div>
+  </template>
+  <!-- Header -->
+  <header class="header container">
+    <div class="header_logo">
+      <a href="./index.html">
+        <img src="./assets/images/LOGO.png" alt="logo">
+      </a>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link  nav__link_active">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="./index.html" class="nav__link">Shop</a>
+        </li>
+        <li class="nav__item">
+          <a href="./promotion.html" class="nav__link">Promotion</a>
+        </li>
+        <li class="nav__item">
+          <a href="./contacts.html" class="nav__link">Contacts</a>
+        </li>
+        <li class="nav__item">
+          <a href="./delivery.html" class="nav__link">Delivery</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header__info info">
+      <!-- <div class="info__item">
+        <img src="./assets/icons/Heart_color_filled.svg" alt="favorites">
+        <div class="info__title">Favorites</div>
+      </div> -->
+      <div class="info__item" id="open-help-form">
+        <img src="./assets/icons/headset_white.svg" alt="favorites">
+        <div class="info__title">Help</div>
+      </div>
+      <!-- <div class="info__item">
+        <img src="./assets/icons/world_white.svg" alt="favorites">
+        <div class="info__title">EN</div>
+      </div> -->
+      <div class="info__item" id="open-cart">
+        <img src="./assets/icons/cart_white.svg" alt="favorites">
+        <div class="info__badge" id="cart-quatity">0</div>
+      </div>
+    </div>
+  </header>
+  <!-- Main -->
+  <main class="main">
+    <div class="container">
+      <!-- Promotion section -->
+        <div class="promotion">
+          <a href="./promotion.html" class="promotion__link">
+            <img src="./assets/icons/Prize_icon_color.svg" alt="icon">
+            <span class="promotion__description">
+              -10% on first order on the website
+            </span>
+          </a>
+          <a href="./promotion.html" class="promotion__link">
+            <img src="./assets/icons/persent_icon_color.svg" alt="icon">
+            <span class="promotion__description">
+              Buy 1 get 1 -50% SALE
+            </span>
+          </a>
+          <a href="./promotion.html" class="promotion__link">
+            <img src="./assets/icons/Delivery_icon_color.svg" alt="icon">
+            <span class="promotion__description">
+              Free Express Shipping over $99!
+            </span>
+          </a>
+        </div>
+      <!-- Company History -->
+      <div class="about about_history">
+        <h2 class="about__title">Company History:</h2>
+        <p class="about__text-block">
+          Peak Power was founded in 2010 in Kharkiv, Ukraine, by a group of enthusiasts who share a passion for a healthy lifestyle and sports. Our company emerged from the belief that high-quality sports nutrition and equipment should be accessible to everyone striving for better physical fitness.
+        </p>
+      </div>
+      <div class="devider"></div>
+      <!-- Mission and Values of Peak Power -->
+      <div class="about about_mission">
+        <h2 class="about__title">Mission and Values of Peak Power:</h2>
+        <div class="about__text-block">
+          <p>
+            The mission of Peak Power is to provide high-quality products and equipment that contribute to unlocking the full potential of each individual on their fitness journey. We value:
+          </p>
+          <ul class="about__ul">
+            <li>Quality and safety of our products.</li>
+            <li>Continuous improvement.</li>
+            <li>Support for an active and healthy lifestyle.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="devider"></div>
+      <!-- Peak Power Team -->
+      <div class="about about_team">
+        <h2 class="about__title">Peak Power Team:</h2>
+        <p class="about__paragraph">
+          Our team consists of experienced professionals who are passionate about fitness and care about your well-being. Meet our key team members:
+        </p>
+        <div class="team">
+          <div class="team__card">
+            <img src="./assets/images/team-1.png" alt="team" class="team__img">
+            <div class="team__text">
+              Anna Smirnova - CEO
+              <ul class="team__ul">
+                <li>Over 15 years of experience in the fitnes industry.</li>
+                <li>Expert in sport nutrition.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="team__card">
+            <img src="./assets/images/team-2.png" alt="team" class="team__img">
+            <div class="team__text">
+              Sergey Petrov - Technical Director
+              <ul class="team__ul">
+                <li>10 years of expertise in sports equipment.</li>
+                <li>In charge of certifications and quality standards.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="devider"></div>
+      <!-- Quality and Safety at Peak Power -->
+      <div class="about about_quality">
+        <h2 class="about__title">Quality and Safety at Peak Power:</h2>
+        <p class="about__text-block">
+          We take pride in subjecting all our products to rigorous quality control. All sports equipment and nutrition are certified, meeting the highest standards of safety and effectiveness.
+        </p>
+      </div>
+      <div class="devider"></div>
+      <!-- Brand Philosophy of Peak Power -->
+      <div class="about about_brand">
+        <h2 class="about__title">Brand Philosophy of Peak Power</h2>
+        <p class="about__text-block">
+          We believe that everyone can achieve their fitness goals, and our brand is designed for you—to support your efforts, inspire you, and celebrate the joy of reaching the peak of strength and health.
+        </p>
+      </div>
+      <div class="devider"></div>
+      <!-- Reviews and Recommendations -->
+      <div class="about about_reviews">
+        <h2 class="about__title">Reviews and Recommendations:</h2>
+        <p class="about__paragraph">
+          Read reviews from our customers who share their experiences and successes in achieving their fitness goals. Join the Peak Power community and share your success stories!
+        </p>
+        <div class="testimonial-slider">
+          <div class="testimonial-slider__body"></div>
+          <div class="testimonial-slider__buttons">
+            <button class="next-btn next-btn_left"></button>
+            <div class="testimonial-slider__dots"></div>
+            <button class="next-btn next-btn_right"></button>
+          </div>
+        </div>
+      </div>
+      <div class="devider"></div>
+      <!-- Contact Information -->
+      <div class="about about_contacts">
+        <h2 class="about__title">Contact Information:</h2>
+        <div class="about__paragraph">
+          <ul class="about__ul">
+            <li>Email: info@peakpower.com</li>
+            <li>Phone: +380 50 123 4567</li>
+            <li>Address: 123 Sports Street, Kharkiv, Ukraine.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="devider"></div>
+    </div>
+    <!-- SpecialOffer section -->
+    <div class="special-offer">
+      <div class="special-offer__sticker">
+        <h2 class="special-offer__title">
+          HOT January <br/> 
+          Buy 1 get 1 -50% SALE  
+        </h2>
+        <div class="special-offer__btn-wrapper">
+          <a href="./promotion.html" class="arrow-right-btn">Let's shopping</a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+    <!-- Footer -->
+    <div class="container">
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <img src="./assets/images/LOGO.png" alt="logo">
+          </div>
+          <div class="footer__menu menu">
+            <div class="menu__block">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Help</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Delivery and return policy</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Frequently asked questions</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contacts us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu__block">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Company</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">About us</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Contests & giveaways</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Blog</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__up-btn-wrapper">
+            <a href="#" class="up-btn"></a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__payment">
+            <h2 class="footer__title">Pay securely with</h2>
+            <div class="footer__img">
+              <img src="./assets/images/payment.png" alt="payment">
+            </div>
+          </div>
+          <div class="footer__social">
+            <h2 class="footer__title">Social networks</h2>
+            <div class="footer__social-icons">
+              <a href="#" class="footer__link">
+                <img src="./assets/icons/instagram.svg" alt="instagram" class="footer__icon">
+              </a>
+              <a href="#" class="footer__link">
+                <img src="./assets/icons/skype.svg" alt="skype" class="footer__icon">
+              </a>
+              <a href="#" class="footer__link">
+                <img src="./assets/icons/youtube.svg" alt="youtube" class="footer__icon">
+              </a>
+              <a href="#" class="footer__link">
+                <img src="./assets/icons/whatsup.svg" alt="whatsup" class="footer__icon">
+              </a>
+              <a href="#" class="footer__link">
+                <img src="./assets/icons/linkendin.svg" alt="linkendin" class="footer__icon">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <!-- Overlay -->
+  <div class="overlay overlay_hidden">
+    <!-- Cart pop-up -->
+    <div class="popup popup_hidden" id="cart">
+     <button class="popup__close-btn"></button>
+     <h2 class="popup__title">Cart</h2>
+     <div class="cart__step">
+       <h3 class="cart__subtitle">Step 1</h3>
+       <div class="cart__table">
+         <div class="cart__table-header"></div>
+         <div class="cart__table-body"></div>
+         <div class="cart__table-footer"></div>
+       </div>
+     </div>
+     <div class="cart__step">
+       <h3 class="cart__subtitle">Step 2</h3>
+       <label for="promo-code" class="cart__label">Promo code <span>(if have)</span> </label>
+       <input type="text" class="cart__promo-code" id="promo-code" placeholder="8 - 16 symbols">
+     </div>
+     <div class="cart__step">
+       <h3 class="cart__subtitle">Step 3</h3>
+       <form action="#" class="popup-form" id="cart-form">
+         <label for="cart-name" class="popup-form__label">
+           Name <span>*</span> 
+         </label>
+         <input type="text" id="cart-name" class="popup-form__input">
+         <label for="cart-communication" class="popup-form__label">
+           Telephone <span>*</span>
+         </label>
+         <input type="tel" id="cart-communication" class="popup-form__input">
+         <label for="cart-message" class="popup-form__label">Message</label>
+         <input type="text" id="cart-message" class="popup-form__input popup-form__input_last">
+         <div class="popup__btn-box">
+           <button type="submit" class="cta-btn" id="cart-get-it">Get it!</button>
+         </div>
+       </form>
+     </div>
+     <div class="popup__btn-box">
+       <button class="ghost-btn" id="continue-shopping">Continue shopping</button>
+     </div>
+   </div>
+   <!-- Thanks you popup -->
+   <div class="popup popup_hidden" id="thank-you">
+     <button class="popup__close-btn"></button>
+     <h2 class="popup__title">
+       Thank you!
+     </h2>
+     <p class="popup__text">
+       Your order has been accepted! <br/>
+       Wait for a call from our manager.
+     </p>
+     <div class="popup__btn-box">
+       <a href="./index.html" class="outlined-btn" id="close-thank-you">
+         Main page
+       </a>
+     </div>
+   </div>
+   <!-- Help form -->
+   <div class="popup popup_hidden" id="help-form">
+     <button class="popup__close-btn"></button>
+     <h2 class="popup__title">Have any questions?</h2>
+     <p class="popup__text">
+       Ask our manager for answers:)
+     </p>
+     <form action="#" class="popup-form" id="question-form">
+       <label for="your-email" class="popup-form__label">
+         Your email <span>*</span>
+       </label>
+       <input type="text" class="popup-form__input">
+       <label for="your-message" class="popup-form__label">
+         Message <span>*</span>
+       </label>
+       <input type="text" class="popup-form__input">
+       <div class="popup__btn-box">
+         <button type="submit" class="outlined-btn">Send</button>
+       </div>
+     </form>
+   </div>
+   <!-- Thank you for the question -->
+   <div class="popup popup_hidden" id="thank-you-for-the-question">
+     <button class="popup__close-btn"></button>
+     <h2 class="popup__title">
+       Thank you for the quetion!
+     </h2>
+     <p class="popup__text">
+       We will answer you soon, check your email :)
+     </p>
+     <div class="popup__btn-box">
+       <a href="./index.html" class="outlined-btn">
+         Main page
+       </a>
+     </div>
+   </div>
+ </div>
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
