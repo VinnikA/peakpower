@@ -1,32 +1,28 @@
 const { Product } = require('../../models');
-const fs = require('fs');
-const path = require('path');
+const { HttpError } = require('../../helpers');
+
 const {
-  errors: { HttpErrors },
-} = require('../../helpers');
+  Product: { schemas },
+} = require('../../models');
 
 const { BASE_URL } = process.env;
 
-const deleteOldImage = (oldImage) => {
-  const lastImageName = oldImage.split('uploads')[1];
-  const oldImagePath = path.join(__dirname, '../../', 'uploads', lastImageName);
-  try {
-    fs.unlink(oldImagePath, function (err) {});
-  } catch (err) {
-    console.log(err);
-  }
-};
-
 async function createProduct(req, res) {
   const { body, files } = req;
+  const { error } = schemas.createSchema.validate(req.body);
+
+  if (error) {
+    files.forEach((img) => deleteOldImage(img.path));
+    throw new HttpError(400, error);
+  }
 
   const newProduct = { ...body };
 
-  const isProductExist = await Product.Model.findOne({ name: newProduct.name });
+  // const isProductExist = await Product.Model.findOne({ name: newProduct.name });
 
-  if (isProductExist) {
-    throw new HttpErrors(409, 'product already exists');
-  }
+  // if (isProductExist) {
+  //   throw new HttpError(409, 'product already exists');
+  // }
 
   if (files.length) {
     newProduct.images = files.map((file) => BASE_URL + file.path);

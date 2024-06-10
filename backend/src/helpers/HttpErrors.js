@@ -13,8 +13,4 @@ class HttpError extends Error {
   }
 }
 
-const errors = {
-  HttpError,
-};
-
-module.exports = errors;
+module.exports = HttpError;

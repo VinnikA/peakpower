@@ -1,6 +1,4 @@
-const {
-  errors: { HttpError },
-} = require('../helpers');
+const { HttpError } = require('../helpers');
 
 function validateBody(schema, errMessage) {
   return (req, res, next) => {

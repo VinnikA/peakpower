@@ -1,10 +1,12 @@
 const express = require('express');
 const logger = require('morgan');
 const cors = require('cors');
+const bodyParser = require('body-parser');
+
 require('dotenv').config();
 
 const { errorHandler } = require('./src/helpers');
-const { productRouter, authRouter } = require('./src/routes');
+const { productRouter, authRouter, orderRouter } = require('./src/routes');
 
 console.clear();
 
@@ -20,8 +22,9 @@ app.get('/api/hello', (req, res) => {
   res.status(200).json({ message: 'Hello world' });
 });
 
-app.use('/api/products', productRouter);
 app.use('/api/auth', authRouter);
+app.use('/api/products', productRouter);
+app.use('/api/orders', orderRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Not found' });

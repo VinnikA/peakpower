@@ -1,7 +1,7 @@
 const { Category } = require('../../models');
 
 async function listCategories(req, res) {
-  const categories = await Category.Model.find({}).populate({
+  const categories = await Category.Model.find({ arg: [''] }).populate({
     path: 'parent',
     populate: {
       path: 'parent',

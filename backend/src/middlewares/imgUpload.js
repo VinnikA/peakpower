@@ -1,9 +1,7 @@
 const multer = require('multer');
 const fs = require('fs').promises;
 const path = require('path');
-const {
-  errors: { HttpErrors },
-} = require('../helpers');
+const { HttpErrors } = require('../helpers');
 
 const { BASE_URL } = process.env;
 

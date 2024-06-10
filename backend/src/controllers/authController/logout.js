@@ -1,7 +1,5 @@
 const { Admin } = require('../../models');
-const {
-  errors: { HttpError },
-} = require('../../helpers');
+const { HttpError } = require('../../helpers');
 
 async function logout(req, res) {
   const { _id } = req.user;

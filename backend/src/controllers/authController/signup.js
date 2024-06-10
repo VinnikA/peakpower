@@ -1,9 +1,7 @@
 const bcrypt = require('bcrypt');
 const { Admin } = require('../../models');
 
-const {
-  errors: { HttpError },
-} = require('../../helpers');
+const { HttpError } = require('../../helpers');
 
 async function signup(req, res) {
   const { username, password } = req.body;

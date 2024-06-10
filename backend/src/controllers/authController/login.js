@@ -3,9 +3,7 @@ const jwt = require('jsonwebtoken');
 
 const { Admin } = require('../../models');
 
-const {
-  errors: { HttpError },
-} = require('../../helpers');
+const { HttpError } = require('../../helpers');
 
 const { SECRET_KEY } = process.env;
 
